@@ -1,0 +1,1986 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="types.xsd" />
+  <xs:simpleType name="UnitQuantity">
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
+  <xs:simpleType name="action_camera_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="action_camera_functions_display" />
+      <xs:enumeration value="action_camera_functions_gps" />
+      <xs:enumeration value="action_camera_functions_microphone" />
+      <xs:enumeration value="action_camera_functions_waterproof" />
+      <xs:enumeration value="action_camera_functions_wifi" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="aspect_ratio">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="aspect_ratio_1_1" />
+      <xs:enumeration value="aspect_ratio_14_5" />
+      <xs:enumeration value="aspect_ratio_15_9" />
+      <xs:enumeration value="aspect_ratio_16_10" />
+      <xs:enumeration value="aspect_ratio_16_4" />
+      <xs:enumeration value="aspect_ratio_16_9" />
+      <xs:enumeration value="aspect_ratio_17_9" />
+      <xs:enumeration value="aspect_ratio_2_35_1" />
+      <xs:enumeration value="aspect_ratio_2_37_1" />
+      <xs:enumeration value="aspect_ratio_21_9" />
+      <xs:enumeration value="aspect_ratio_4_3" />
+      <xs:enumeration value="aspect_ratio_5_4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="battery_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="battery_type_1_2aa" />
+      <xs:enumeration value="battery_type_2_3aa" />
+      <xs:enumeration value="battery_type_2cr5" />
+      <xs:enumeration value="battery_type_a" />
+      <xs:enumeration value="battery_type_a23" />
+      <xs:enumeration value="battery_type_a27" />
+      <xs:enumeration value="battery_type_aa" />
+      <xs:enumeration value="battery_type_aaa" />
+      <xs:enumeration value="battery_type_aaaa" />
+      <xs:enumeration value="battery_type_b" />
+      <xs:enumeration value="battery_type_ba5800" />
+      <xs:enumeration value="battery_type_c" />
+      <xs:enumeration value="battery_type_cr_p2" />
+      <xs:enumeration value="battery_type_cr_v3" />
+      <xs:enumeration value="battery_type_cr1025" />
+      <xs:enumeration value="battery_type_cr1216" />
+      <xs:enumeration value="battery_type_cr1220" />
+      <xs:enumeration value="battery_type_cr1225" />
+      <xs:enumeration value="battery_type_cr123" />
+      <xs:enumeration value="battery_type_cr123a" />
+      <xs:enumeration value="battery_type_cr1616" />
+      <xs:enumeration value="battery_type_cr1620" />
+      <xs:enumeration value="battery_type_cr1632" />
+      <xs:enumeration value="battery_type_cr2" />
+      <xs:enumeration value="battery_type_cr2012" />
+      <xs:enumeration value="battery_type_cr927" />
+      <xs:enumeration value="battery_type_d" />
+      <xs:enumeration value="battery_type_f" />
+      <xs:enumeration value="battery_type_j" />
+      <xs:enumeration value="battery_type_n" />
+      <xs:enumeration value="battery_type_pp1" />
+      <xs:enumeration value="battery_type_pp10" />
+      <xs:enumeration value="battery_type_pp11" />
+      <xs:enumeration value="battery_type_pp3" />
+      <xs:enumeration value="battery_type_pp4" />
+      <xs:enumeration value="battery_type_pp6" />
+      <xs:enumeration value="battery_type_pp7" />
+      <xs:enumeration value="battery_type_pp8" />
+      <xs:enumeration value="battery_type_pp9" />
+      <xs:enumeration value="battery_type_sub_c" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bluetooth_version">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bluetooth_version_1_2" />
+      <xs:enumeration value="bluetooth_version_2_0" />
+      <xs:enumeration value="bluetooth_version_2_1" />
+      <xs:enumeration value="bluetooth_version_3_0" />
+      <xs:enumeration value="bluetooth_version_3_1" />
+      <xs:enumeration value="bluetooth_version_4_0" />
+      <xs:enumeration value="bluetooth_version_4_1" />
+      <xs:enumeration value="bluetooth_version_4_2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="camera_light_technology">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="hmi" />
+      <xs:enumeration value="tungsten" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="chipset">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="chipset_amd_760g" />
+      <xs:enumeration value="chipset_amd_970" />
+      <xs:enumeration value="chipset_amd_990fx" />
+      <xs:enumeration value="chipset_amd_990x" />
+      <xs:enumeration value="chipset_amd_a50m" />
+      <xs:enumeration value="chipset_amd_a55" />
+      <xs:enumeration value="chipset_amd_a55_fch" />
+      <xs:enumeration value="chipset_amd_a58" />
+      <xs:enumeration value="chipset_amd_a68" />
+      <xs:enumeration value="chipset_amd_a68h" />
+      <xs:enumeration value="chipset_amd_a68m" />
+      <xs:enumeration value="chipset_amd_a70m" />
+      <xs:enumeration value="chipset_amd_a75" />
+      <xs:enumeration value="chipset_amd_a75_fch" />
+      <xs:enumeration value="chipset_amd_a76m" />
+      <xs:enumeration value="chipset_amd_a76m_fch" />
+      <xs:enumeration value="chipset_amd_a78" />
+      <xs:enumeration value="chipset_amd_a78_bolton_d3" />
+      <xs:enumeration value="chipset_amd_a78_fch" />
+      <xs:enumeration value="chipset_amd_a85x" />
+      <xs:enumeration value="chipset_amd_a85x_hudson_d4" />
+      <xs:enumeration value="chipset_amd_a88x" />
+      <xs:enumeration value="chipset_amd_a88x_bolton_d4" />
+      <xs:enumeration value="chipset_amd_a88x_fch" />
+      <xs:enumeration value="chipset_amd_d3" />
+      <xs:enumeration value="chipset_amd_d4" />
+      <xs:enumeration value="chipset_ati_radeon" />
+      <xs:enumeration value="chipset_ati_xpress_200" />
+      <xs:enumeration value="chipset_intel_5520" />
+      <xs:enumeration value="chipset_intel_b150_express" />
+      <xs:enumeration value="chipset_intel_b75_express" />
+      <xs:enumeration value="chipset_intel_b85" />
+      <xs:enumeration value="chipset_intel_b85_express" />
+      <xs:enumeration value="chipset_intel_c202" />
+      <xs:enumeration value="chipset_intel_c224" />
+      <xs:enumeration value="chipset_intel_c226" />
+      <xs:enumeration value="chipset_intel_c236" />
+      <xs:enumeration value="chipset_intel_c602" />
+      <xs:enumeration value="chipset_intel_c606" />
+      <xs:enumeration value="chipset_intel_c612" />
+      <xs:enumeration value="chipset_intel_cm236_express" />
+      <xs:enumeration value="chipset_intel_h110_express" />
+      <xs:enumeration value="chipset_intel_h170_express" />
+      <xs:enumeration value="chipset_intel_h61" />
+      <xs:enumeration value="chipset_intel_h61_express" />
+      <xs:enumeration value="chipset_intel_h77_express" />
+      <xs:enumeration value="chipset_intel_h81" />
+      <xs:enumeration value="chipset_intel_h81_express" />
+      <xs:enumeration value="chipset_intel_h87_express" />
+      <xs:enumeration value="chipset_intel_h97" />
+      <xs:enumeration value="chipset_intel_h97_express" />
+      <xs:enumeration value="chipset_intel_hm170" />
+      <xs:enumeration value="chipset_intel_hm65_express" />
+      <xs:enumeration value="chipset_intel_hm67_express" />
+      <xs:enumeration value="chipset_intel_hm70_express" />
+      <xs:enumeration value="chipset_intel_hm75_express" />
+      <xs:enumeration value="chipset_intel_hm76_express" />
+      <xs:enumeration value="chipset_intel_hm77_express" />
+      <xs:enumeration value="chipset_intel_hm86_express" />
+      <xs:enumeration value="chipset_intel_hm87_express" />
+      <xs:enumeration value="chipset_intel_nm10_express" />
+      <xs:enumeration value="chipset_intel_nm70_express" />
+      <xs:enumeration value="chipset_intel_p55_express" />
+      <xs:enumeration value="chipset_intel_p67_express" />
+      <xs:enumeration value="chipset_intel_q150_express" />
+      <xs:enumeration value="chipset_intel_q170_express" />
+      <xs:enumeration value="chipset_intel_q67_express" />
+      <xs:enumeration value="chipset_intel_q77_express" />
+      <xs:enumeration value="chipset_intel_q85_express" />
+      <xs:enumeration value="chipset_intel_q87" />
+      <xs:enumeration value="chipset_intel_q87_express" />
+      <xs:enumeration value="chipset_intel_qm170" />
+      <xs:enumeration value="chipset_intel_qm77_express" />
+      <xs:enumeration value="chipset_intel_qm87_express" />
+      <xs:enumeration value="chipset_intel_qs67_express" />
+      <xs:enumeration value="chipset_intel_qs77_express" />
+      <xs:enumeration value="chipset_intel_x58_express" />
+      <xs:enumeration value="chipset_intel_x79_express" />
+      <xs:enumeration value="chipset_intel_x99" />
+      <xs:enumeration value="chipset_intel_x99_express" />
+      <xs:enumeration value="chipset_intel_z170_express" />
+      <xs:enumeration value="chipset_intel_z68_express" />
+      <xs:enumeration value="chipset_intel_z75_express" />
+      <xs:enumeration value="chipset_intel_z77_express" />
+      <xs:enumeration value="chipset_intel_z87" />
+      <xs:enumeration value="chipset_intel_z87_express" />
+      <xs:enumeration value="chipset_intel_z97" />
+      <xs:enumeration value="chipset_intel_z97_express" />
+      <xs:enumeration value="chipset_nividia_geforce" />
+      <xs:enumeration value="chipset_nividia_nforce" />
+      <xs:enumeration value="chipset_nividia_nforce2" />
+      <xs:enumeration value="chipset_nividia_nforce3" />
+      <xs:enumeration value="chipset_nividia_nforce4" />
+      <xs:enumeration value="chipset_via_vx900" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="color_group">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="color_group_beige" />
+      <xs:enumeration value="color_group_black" />
+      <xs:enumeration value="color_group_blue" />
+      <xs:enumeration value="color_group_brown" />
+      <xs:enumeration value="color_group_copper" />
+      <xs:enumeration value="color_group_dark_blue" />
+      <xs:enumeration value="color_group_dark_brown" />
+      <xs:enumeration value="color_group_dark_green" />
+      <xs:enumeration value="color_group_dark_grey" />
+      <xs:enumeration value="color_group_dark_orange" />
+      <xs:enumeration value="color_group_dark_pink" />
+      <xs:enumeration value="color_group_dark_purple" />
+      <xs:enumeration value="color_group_dark_red" />
+      <xs:enumeration value="color_group_dark_yellow" />
+      <xs:enumeration value="color_group_gold" />
+      <xs:enumeration value="color_group_green" />
+      <xs:enumeration value="color_group_grey" />
+      <xs:enumeration value="color_group_light_blue" />
+      <xs:enumeration value="color_group_light_brown" />
+      <xs:enumeration value="color_group_light_green" />
+      <xs:enumeration value="color_group_light_grey" />
+      <xs:enumeration value="color_group_light_orange" />
+      <xs:enumeration value="color_group_light_pink" />
+      <xs:enumeration value="color_group_light_purple" />
+      <xs:enumeration value="color_group_light_red" />
+      <xs:enumeration value="color_group_light_yellow" />
+      <xs:enumeration value="color_group_metallic" />
+      <xs:enumeration value="color_group_multicolor" />
+      <xs:enumeration value="color_group_orange" />
+      <xs:enumeration value="color_group_pink" />
+      <xs:enumeration value="color_group_purple" />
+      <xs:enumeration value="color_group_red" />
+      <xs:enumeration value="color_group_silver" />
+      <xs:enumeration value="color_group_transparent" />
+      <xs:enumeration value="color_group_turquoise" />
+      <xs:enumeration value="color_group_white" />
+      <xs:enumeration value="color_group_wood" />
+      <xs:enumeration value="color_group_yellow" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="compatible_operating_system">
+    <xs:restriction base="stringNotNull" />
+  </xs:simpleType>
+  <xs:simpleType name="compatible_platform">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="compatible_platform_android" />
+      <xs:enumeration value="compatible_platform_apple_ios" />
+      <xs:enumeration value="compatible_platform_game_console" />
+      <xs:enumeration value="compatible_platform_mac" />
+      <xs:enumeration value="compatible_platform_pc" />
+      <xs:enumeration value="compatible_platform_unix" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="compatiblecellphonemodel">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="apple_iphone_3gs" />
+      <xs:enumeration value="apple_iphone_4" />
+      <xs:enumeration value="apple_iphone_4s" />
+      <xs:enumeration value="apple_iphone_5" />
+      <xs:enumeration value="apple_iphone_5c" />
+      <xs:enumeration value="apple_iphone_5s" />
+      <xs:enumeration value="apple_iphone_6" />
+      <xs:enumeration value="apple_iphone_6_plus" />
+      <xs:enumeration value="apple_iphone_6s" />
+      <xs:enumeration value="apple_iphone_6s_plus" />
+      <xs:enumeration value="apple_iphone_7" />
+      <xs:enumeration value="apple_iphone_7_plus" />
+      <xs:enumeration value="apple_iphone_8" />
+      <xs:enumeration value="apple_iphone_8_plus" />
+      <xs:enumeration value="apple_iphone_se" />
+      <xs:enumeration value="apple_iphone_x" />
+      <xs:enumeration value="doro_8030" />
+      <xs:enumeration value="doro_liberto_825" />
+      <xs:enumeration value="google_nexus_4" />
+      <xs:enumeration value="google_nexus_5" />
+      <xs:enumeration value="google_nexus_6" />
+      <xs:enumeration value="google_nexus_g5" />
+      <xs:enumeration value="google_nexus_g6" />
+      <xs:enumeration value="google_pixel" />
+      <xs:enumeration value="google_pixel_xl" />
+      <xs:enumeration value="htc_desire_626" />
+      <xs:enumeration value="htc_desire_816" />
+      <xs:enumeration value="htc_desire_eye" />
+      <xs:enumeration value="htc_one" />
+      <xs:enumeration value="htc_one_a9s" />
+      <xs:enumeration value="htc_one_m10" />
+      <xs:enumeration value="htc_one_m7" />
+      <xs:enumeration value="htc_one_m8" />
+      <xs:enumeration value="htc_one_max" />
+      <xs:enumeration value="htc_one_mini" />
+      <xs:enumeration value="htc_u11" />
+      <xs:enumeration value="huawei_ascend_g7" />
+      <xs:enumeration value="huawei_ascend_mate_7" />
+      <xs:enumeration value="huawei_ascend_p7" />
+      <xs:enumeration value="huawei_honor_4x" />
+      <xs:enumeration value="huawei_honor_5" />
+      <xs:enumeration value="huawei_honor_5x" />
+      <xs:enumeration value="huawei_honor_6x" />
+      <xs:enumeration value="huawei_honor_7" />
+      <xs:enumeration value="huawei_honor_7_lite" />
+      <xs:enumeration value="huawei_honor_8_lite" />
+      <xs:enumeration value="huawei_honor_9" />
+      <xs:enumeration value="huawei_mate_10" />
+      <xs:enumeration value="huawei_mate_10_pro" />
+      <xs:enumeration value="huawei_nexus_6p" />
+      <xs:enumeration value="huawei_p_smart" />
+      <xs:enumeration value="huawei_p10_lite" />
+      <xs:enumeration value="huawei_p8_lite" />
+      <xs:enumeration value="huawei_p9_plus" />
+      <xs:enumeration value="huawei_y5ii" />
+      <xs:enumeration value="huawei_y6_pro" />
+      <xs:enumeration value="lg_g2" />
+      <xs:enumeration value="lg_g3" />
+      <xs:enumeration value="lg_g4" />
+      <xs:enumeration value="lg_g6" />
+      <xs:enumeration value="lg_gflex" />
+      <xs:enumeration value="lg_k10" />
+      <xs:enumeration value="lg_k10_2017" />
+      <xs:enumeration value="lg_k4_2017" />
+      <xs:enumeration value="lg_k8_2017" />
+      <xs:enumeration value="lg_nexus_5x" />
+      <xs:enumeration value="lg_optimus_g" />
+      <xs:enumeration value="lg_q6" />
+      <xs:enumeration value="lg_v30" />
+      <xs:enumeration value="motorola_droid_turbo" />
+      <xs:enumeration value="motorola_moto_g2" />
+      <xs:enumeration value="motorola_moto_g5" />
+      <xs:enumeration value="motorola_moto_g5_plus" />
+      <xs:enumeration value="motorola_moto_g5s_plus" />
+      <xs:enumeration value="motorola_moto_g6" />
+      <xs:enumeration value="motorola_moto_g6_plus" />
+      <xs:enumeration value="motorola_moto_x" />
+      <xs:enumeration value="motorola_moto_x2" />
+      <xs:enumeration value="nokia_lumia_1020" />
+      <xs:enumeration value="nokia_lumia_1320" />
+      <xs:enumeration value="nokia_lumia_1520" />
+      <xs:enumeration value="nokia_lumia_620" />
+      <xs:enumeration value="nokia_lumia_625" />
+      <xs:enumeration value="nokia_lumia_730" />
+      <xs:enumeration value="nokia_lumia_830" />
+      <xs:enumeration value="nokia_lumia_920" />
+      <xs:enumeration value="nokia_lumia_925" />
+      <xs:enumeration value="nokia_lumia_928" />
+      <xs:enumeration value="nokia_lumia_930" />
+      <xs:enumeration value="oneplus_one" />
+      <xs:enumeration value="samsung_galaxy_a3" />
+      <xs:enumeration value="samsung_galaxy_a3_2016" />
+      <xs:enumeration value="samsung_galaxy_a3_2017" />
+      <xs:enumeration value="samsung_galaxy_a5" />
+      <xs:enumeration value="samsung_galaxy_a5_2016" />
+      <xs:enumeration value="samsung_galaxy_a5_2017" />
+      <xs:enumeration value="samsung_galaxy_a7_2017" />
+      <xs:enumeration value="samsung_galaxy_a8" />
+      <xs:enumeration value="samsung_galaxy_alpha" />
+      <xs:enumeration value="samsung_galaxy_j3_2016" />
+      <xs:enumeration value="samsung_galaxy_j3_2017" />
+      <xs:enumeration value="samsung_galaxy_j5_2016" />
+      <xs:enumeration value="samsung_galaxy_j5_2017" />
+      <xs:enumeration value="samsung_galaxy_note_2" />
+      <xs:enumeration value="samsung_galaxy_note_3" />
+      <xs:enumeration value="samsung_galaxy_note_4" />
+      <xs:enumeration value="samsung_galaxy_note_5" />
+      <xs:enumeration value="samsung_galaxy_note_7" />
+      <xs:enumeration value="samsung_galaxy_note_8" />
+      <xs:enumeration value="samsung_galaxy_s2" />
+      <xs:enumeration value="samsung_galaxy_s3" />
+      <xs:enumeration value="samsung_galaxy_s4" />
+      <xs:enumeration value="samsung_galaxy_s4_active" />
+      <xs:enumeration value="samsung_galaxy_s4_mini" />
+      <xs:enumeration value="samsung_galaxy_s5" />
+      <xs:enumeration value="samsung_galaxy_s5_active" />
+      <xs:enumeration value="samsung_galaxy_s5_mini" />
+      <xs:enumeration value="samsung_galaxy_s6" />
+      <xs:enumeration value="samsung_galaxy_s6_edge" />
+      <xs:enumeration value="samsung_galaxy_s7" />
+      <xs:enumeration value="samsung_galaxy_s7_active" />
+      <xs:enumeration value="samsung_galaxy_s7_edge" />
+      <xs:enumeration value="samsung_galaxy_s8" />
+      <xs:enumeration value="samsung_galaxy_s8_plus" />
+      <xs:enumeration value="samsung_galaxy_s9" />
+      <xs:enumeration value="samsung_galaxy_s9_plus" />
+      <xs:enumeration value="samsung_galaxy_xcover_3" />
+      <xs:enumeration value="samsung_galaxy_xcover_4" />
+      <xs:enumeration value="sony_xperia_e1" />
+      <xs:enumeration value="sony_xperia_e5" />
+      <xs:enumeration value="sony_xperia_l1" />
+      <xs:enumeration value="sony_xperia_m2" />
+      <xs:enumeration value="sony_xperia_m5" />
+      <xs:enumeration value="sony_xperia_x_compact" />
+      <xs:enumeration value="sony_xperia_xa1_plus" />
+      <xs:enumeration value="sony_xperia_xa1_ultra" />
+      <xs:enumeration value="sony_xperia_xa2" />
+      <xs:enumeration value="sony_xperia_xa2_ultra" />
+      <xs:enumeration value="sony_xperia_xz" />
+      <xs:enumeration value="sony_xperia_xz_premium" />
+      <xs:enumeration value="sony_xperia_xz1" />
+      <xs:enumeration value="sony_xperia_xz1_compact" />
+      <xs:enumeration value="sony_xperia_z1" />
+      <xs:enumeration value="sony_xperia_z1_compact" />
+      <xs:enumeration value="sony_xperia_z2" />
+      <xs:enumeration value="sony_xperia_z3" />
+      <xs:enumeration value="sony_xperia_z3_compact" />
+      <xs:enumeration value="sony_xperia_z5" />
+      <xs:enumeration value="sony_xperia_z5_premium" />
+      <xs:enumeration value="sony_xperia_zr" />
+      <xs:enumeration value="zte_blade_3" />
+      <xs:enumeration value="zte_blade_s6" />
+      <xs:enumeration value="zte_blade_vec_4g" />
+      <xs:enumeration value="zte_nubia_z5" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="computer_microphone_usage">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="broadcasting" />
+      <xs:enumeration value="instruments" />
+      <xs:enumeration value="measuring" />
+      <xs:enumeration value="song" />
+      <xs:enumeration value="table_microphone" />
+      <xs:enumeration value="video_camera" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="cpu_support">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bits_32" />
+      <xs:enumeration value="bits_32_or_64" />
+      <xs:enumeration value="bits_64" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="da_audio">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="sampling_16bit_44_1khz" />
+      <xs:enumeration value="sampling_16bit_48khz" />
+      <xs:enumeration value="sampling_1bit" />
+      <xs:enumeration value="sampling_24bit_192khz" />
+      <xs:enumeration value="sampling_24bit_48khz" />
+      <xs:enumeration value="sampling_24bit_96khz" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="data_link_layer">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="data_link_layer_ethernet" />
+      <xs:enumeration value="data_link_layer_fastethernet" />
+      <xs:enumeration value="data_link_layer_gigabitethernet" />
+      <xs:enumeration value="data_link_layer_ieee802_11a" />
+      <xs:enumeration value="data_link_layer_ieee802_11ac" />
+      <xs:enumeration value="data_link_layer_ieee802_11b" />
+      <xs:enumeration value="data_link_layer_ieee802_11g" />
+      <xs:enumeration value="data_link_layer_ieee802_11n" />
+      <xs:enumeration value="data_link_layer_ieee802_11ndraft" />
+      <xs:enumeration value="data_link_layer_ieee802_1x" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="data_storage_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="blu-ray" />
+      <xs:enumeration value="cf" />
+      <xs:enumeration value="dvcpro" />
+      <xs:enumeration value="flash_drive" />
+      <xs:enumeration value="hard_drive" />
+      <xs:enumeration value="micro-sd" />
+      <xs:enumeration value="mini_dvd_dv" />
+      <xs:enumeration value="sd_sdhc_sdxc" />
+      <xs:enumeration value="xd" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="docking_station_form_factor">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="docking_station_form_factor_2_5_inch" />
+      <xs:enumeration value="docking_station_form_factor_3_5_inch" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ear_piece_design">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ear_piece_design_fullsize" />
+      <xs:enumeration value="ear_piece_design_in_ear" />
+      <xs:enumeration value="ear_piece_design_on_ear" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="encryption_system">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="conax" />
+      <xs:enumeration value="cryptoguard" />
+      <xs:enumeration value="cryptolite" />
+      <xs:enumeration value="irdeto" />
+      <xs:enumeration value="viaccess" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="external_network_card_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="external_network_card_type_pci" />
+      <xs:enumeration value="external_network_card_type_pci_express" />
+      <xs:enumeration value="external_network_card_type_usb" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="external_optical_drive_connectivity">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="e-sata" />
+      <xs:enumeration value="firewire" />
+      <xs:enumeration value="ide_pata" />
+      <xs:enumeration value="sata" />
+      <xs:enumeration value="usb2_0" />
+      <xs:enumeration value="usb3_0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="external_optical_drive_format">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="cd" />
+      <xs:enumeration value="dvd" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="external_sound_card_power_management">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="mains" />
+      <xs:enumeration value="usb" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="fittnes_tracker_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="heartratemonitor" />
+      <xs:enumeration value="sleeptracker" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="gps_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="compass" />
+      <xs:enumeration value="rangefinder" />
+      <xs:enumeration value="route_planner" />
+      <xs:enumeration value="speedometer" />
+      <xs:enumeration value="voice_steering" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="graphics_memory_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="graphics_memory_type_ddr_sdram" />
+      <xs:enumeration value="graphics_memory_type_ddr2_sdram" />
+      <xs:enumeration value="graphics_memory_type_ddr3_sdram" />
+      <xs:enumeration value="graphics_memory_type_ddr3_vram" />
+      <xs:enumeration value="graphics_memory_type_ddr3l_sdram" />
+      <xs:enumeration value="graphics_memory_type_gddr2_sdram" />
+      <xs:enumeration value="graphics_memory_type_gddr3_sdram" />
+      <xs:enumeration value="graphics_memory_type_gddr5_sdram" />
+      <xs:enumeration value="graphics_memory_type_gddr5x_sdram" />
+      <xs:enumeration value="graphics_memory_type_hbm" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="graphics_processor_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="graphics_processor_type_amd_firepro_2270" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_d300" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_d500" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_m4150" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_m4170" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_m5100" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_m6100" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w2100" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w4100" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w4170m" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w4190m" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w5100" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w5170m" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w7100" />
+      <xs:enumeration value="graphics_processor_type_amd_firepro_w8100" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_6310" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_6320" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_6450" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_6570" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_6620g" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_6670" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7310" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7340" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7470m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7480d" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7500g" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7560d" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7650a" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7660d" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7670m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7730" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7750" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7770" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7790" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7850" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7850m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7870" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7950" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7970" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_7990" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8210" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8240" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8250" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8280" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8280e" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8330" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8330e" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8350g" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8400" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8400e" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8470d" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8510g" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8530m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8550m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8570" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8570d" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8650g" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8670d" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8670m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8750m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8760" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8790m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8850m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8890a" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_hd_8970m" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_pro_450" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r2" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r3" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r4" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_220" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_230" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_235" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_310" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_m230" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_m240" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_m255" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_m330" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r5_m335" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r6" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_240" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_250" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_250x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_260" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_260x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_340" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_360" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_370" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_m260" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_m260x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_m265" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_m265dx" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_m340" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_m360" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r7_m370" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_255" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_270" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_270x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_280" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_280x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_285" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_290" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_290x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_295x2" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_360" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_380" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_380x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_390" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_390x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_fury" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_fury_x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m265x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m275x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m280x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m290x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m370x" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m380" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m390" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_m395" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_r9_nano" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_rx_460" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_rx_470" />
+      <xs:enumeration value="graphics_processor_type_amd_radeon_rx_480" />
+      <xs:enumeration value="graphics_processor_type_arm_mali_t624" />
+      <xs:enumeration value="graphics_processor_type_arm_mali_t764" />
+      <xs:enumeration value="graphics_processor_type_aspeed_ast2300" />
+      <xs:enumeration value="graphics_processor_type_aspeed_ast2400" />
+      <xs:enumeration value="graphics_processor_type_ati_firepro_2460" />
+      <xs:enumeration value="graphics_processor_type_ati_mobility_radeon_hd_4330" />
+      <xs:enumeration value="graphics_processor_type_ati_radeon_3000" />
+      <xs:enumeration value="graphics_processor_type_ati_radeon_hd_3000" />
+      <xs:enumeration value="graphics_processor_type_ati_radeon_hd_5450" />
+      <xs:enumeration value="graphics_processor_type_ati_radeon_hd_6870" />
+      <xs:enumeration value="graphics_processor_type_displaylink_dl_5500" />
+      <xs:enumeration value="graphics_processor_type_geforce_310m" />
+      <xs:enumeration value="graphics_processor_type_geforce_6100" />
+      <xs:enumeration value="graphics_processor_type_geforce_610m" />
+      <xs:enumeration value="graphics_processor_type_geforce_7900" />
+      <xs:enumeration value="graphics_processor_type_geforce_810m" />
+      <xs:enumeration value="graphics_processor_type_geforce_820a" />
+      <xs:enumeration value="graphics_processor_type_geforce_820m" />
+      <xs:enumeration value="graphics_processor_type_geforce_830a" />
+      <xs:enumeration value="graphics_processor_type_geforce_g210" />
+      <xs:enumeration value="graphics_processor_type_geforce_gt" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_550ti" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_560ti" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_570" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_645" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_650" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_660" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_660m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_670" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_680" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_745" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_750" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_760" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_770" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_775m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_780" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_780m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_850a" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_860m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_870m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_960" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_960m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_970" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_970m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_980" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_980m" />
+      <xs:enumeration value="graphics_processor_type_geforce_gtx_titanx" />
+      <xs:enumeration value="graphics_processor_type_intel_extreme_graphics_2" />
+      <xs:enumeration value="graphics_processor_type_intel_gma" />
+      <xs:enumeration value="graphics_processor_type_intel_gma_3150" />
+      <xs:enumeration value="graphics_processor_type_intel_gma_3650" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_2000" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_2500" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_3000" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_400" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_4000" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_4200" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_4400" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_4600" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_5000" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_510" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_5100" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_515" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_520" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_530" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_5300" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_5500" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_6000" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_p4600" />
+      <xs:enumeration value="graphics_processor_type_intel_hd_graphics_p530" />
+      <xs:enumeration value="graphics_processor_type_intel_iris" />
+      <xs:enumeration value="graphics_processor_type_intel_iris_graphics" />
+      <xs:enumeration value="graphics_processor_type_intel_iris_graphics_550" />
+      <xs:enumeration value="graphics_processor_type_intel_iris_graphics_6100" />
+      <xs:enumeration value="graphics_processor_type_intel_iris_pro_graphics" />
+      <xs:enumeration value="graphics_processor_type_intel_iris_pro_graphics_5200" />
+      <xs:enumeration value="graphics_processor_type_intel_iris_pro_graphics_580" />
+      <xs:enumeration value="graphics_processor_type_intel_iris_pro_graphics_6200" />
+      <xs:enumeration value="graphics_processor_type_matrox_m9120" />
+      <xs:enumeration value="graphics_processor_type_matrox_m9125" />
+      <xs:enumeration value="graphics_processor_type_matrox_m9128" />
+      <xs:enumeration value="graphics_processor_type_matrox_m9138" />
+      <xs:enumeration value="graphics_processor_type_matrox_m9140" />
+      <xs:enumeration value="graphics_processor_type_matrox_m9148" />
+      <xs:enumeration value="graphics_processor_type_matrox_mga_g200ew" />
+      <xs:enumeration value="graphics_processor_type_matrox_mga_g550" />
+      <xs:enumeration value="graphics_processor_type_mct_trigger_5_t5_302" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_210" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_610m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_710m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_820m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_830m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_8400_gs" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_840m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_920m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_930m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_940m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_940mx" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_fx_5500" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_220" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_430" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_610" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_610m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_620" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_620m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_630" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_630m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_640" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_640m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_650m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_705" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_710" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_710m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_720" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_720m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_730" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_730a" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_730m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_735m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_740" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_740m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_750m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_755m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gt_840m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_1060" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_1070" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_1080" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_460" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_560_ti" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_580" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_645" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_650" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_650_ti" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_650_ti_boost" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_660" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_660_ti" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_660m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_670" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_670m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_675m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_675mx" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_680" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_680m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_690" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_745" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_750" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_750_ti" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_760" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_760m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_765m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_770" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_770m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_775m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_780" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_780_ti" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_780m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_850m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_860m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_870m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_880m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_940mx" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_950" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_950m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_960" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_960m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_965m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_970" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_970m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_980" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_980_ti" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_980m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_titan" />
+      <xs:enumeration value="graphics_processor_type_nvidia_geforce_gtx_titan_x" />
+      <xs:enumeration value="graphics_processor_type_nvidia_kepler" />
+      <xs:enumeration value="graphics_processor_type_nvidia_next_generation_ion" />
+      <xs:enumeration value="graphics_processor_type_nvidia_nvs_315" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_2000" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_2000d" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_4000" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_410" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_5000" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_600" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k1100m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k1200" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k2000" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k2100m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k2200" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k2200m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k3100m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k4000" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k4100m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k420" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k4200" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k600" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k610m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_k620" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_m1000m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_m2000m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_m3000m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_m500m" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_nvs_300" />
+      <xs:enumeration value="graphics_processor_type_nvidia_quadro_nvs_310" />
+      <xs:enumeration value="graphics_processor_type_powervr_sgx545" />
+      <xs:enumeration value="graphics_processor_type_via_chromotionhd_2_0" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="hard_drive_compatible_case">
+    <xs:restriction base="stringNotNull" />
+  </xs:simpleType>
+  <xs:simpleType name="hard_drive_form_factor">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="hard_drive_form_factor_2_5_inch" />
+      <xs:enumeration value="hard_drive_form_factor_3_5_inch" />
+      <xs:enumeration value="hard_drive_form_factor_m_2" />
+      <xs:enumeration value="hard_drive_form_factor_msata" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="hard_drive_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="hard_drive_type_flash" />
+      <xs:enumeration value="hard_drive_type_hdd" />
+      <xs:enumeration value="hard_drive_type_hybrid" />
+      <xs:enumeration value="hard_drive_type_ssd" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="hdmi_cable_performance">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="highspeed4k" />
+      <xs:enumeration value="highspeedwithethernet" />
+      <xs:enumeration value="withethernet" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="head_unit_features">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="aux" />
+      <xs:enumeration value="dab-radio" />
+      <xs:enumeration value="fm-radio" />
+      <xs:enumeration value="memorycard" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="head_unit_form_factor">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="head_unit_form_factor_1_din" />
+      <xs:enumeration value="head_unit_form_factor_2_din" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="internal_memory_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="internal_memory_type_ddr_sdram" />
+      <xs:enumeration value="internal_memory_type_ddr2_sdram" />
+      <xs:enumeration value="internal_memory_type_ddr3_sdram" />
+      <xs:enumeration value="internal_memory_type_ddr3l_sdram" />
+      <xs:enumeration value="internal_memory_type_ddr4_sdram" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="keyboard_design">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="keyboard_design_ergonomically" />
+      <xs:enumeration value="keyboard_design_rollable_foldable" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="keyboard_technology">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="keyboard_technology_dome_switch" />
+      <xs:enumeration value="keyboard_technology_mechanical" />
+      <xs:enumeration value="keyboard_technology_membrane" />
+      <xs:enumeration value="keyboard_technology_scissor_switch" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="language">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="language_danish" />
+      <xs:enumeration value="language_english" />
+      <xs:enumeration value="language_finnish" />
+      <xs:enumeration value="language_french" />
+      <xs:enumeration value="language_german" />
+      <xs:enumeration value="language_norwegian" />
+      <xs:enumeration value="language_spanish" />
+      <xs:enumeration value="language_swedish" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="license_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="academic" />
+      <xs:enumeration value="electronic_software_distribution" />
+      <xs:enumeration value="oem" />
+      <xs:enumeration value="product_key_card" />
+      <xs:enumeration value="retail" />
+      <xs:enumeration value="subscription" />
+      <xs:enumeration value="upgrade" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="material">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="material_100x280_denier_nylon" />
+      <xs:enumeration value="material_1200_d_polyester" />
+      <xs:enumeration value="material_1680_d_ballistisk_nylon" />
+      <xs:enumeration value="material_1680d_nylon" />
+      <xs:enumeration value="material_1680d_polyester" />
+      <xs:enumeration value="material_1682_d_nylon" />
+      <xs:enumeration value="material_210d_polyester" />
+      <xs:enumeration value="material_2520_d_nylon" />
+      <xs:enumeration value="material_300_d_polyester" />
+      <xs:enumeration value="material_400_d_polyester" />
+      <xs:enumeration value="material_500d_polyester" />
+      <xs:enumeration value="material_600d_polyester" />
+      <xs:enumeration value="material_600dx300d_polyester" />
+      <xs:enumeration value="material_630_d_polyamid" />
+      <xs:enumeration value="material_750_denier_polyester" />
+      <xs:enumeration value="material_840_d_nylon" />
+      <xs:enumeration value="material_900_d_nylon" />
+      <xs:enumeration value="material_abs_plastic" />
+      <xs:enumeration value="material_acrylic" />
+      <xs:enumeration value="material_aerospace_grade_aluminum" />
+      <xs:enumeration value="material_alcantara_suede_fabric" />
+      <xs:enumeration value="material_aluminum" />
+      <xs:enumeration value="material_aluminum_alloy" />
+      <xs:enumeration value="material_anodized_aluminum" />
+      <xs:enumeration value="material_ballistic_nylon" />
+      <xs:enumeration value="material_ballistic_polyester" />
+      <xs:enumeration value="material_calf_leather" />
+      <xs:enumeration value="material_canvas" />
+      <xs:enumeration value="material_carbon_fiber" />
+      <xs:enumeration value="material_cast_aluminum" />
+      <xs:enumeration value="material_copper" />
+      <xs:enumeration value="material_cotton" />
+      <xs:enumeration value="material_cotton_canvas" />
+      <xs:enumeration value="material_cowhide" />
+      <xs:enumeration value="material_cyclepet" />
+      <xs:enumeration value="material_durable_polyester" />
+      <xs:enumeration value="material_eco_leather" />
+      <xs:enumeration value="material_elastomer" />
+      <xs:enumeration value="material_eve" />
+      <xs:enumeration value="material_fabric" />
+      <xs:enumeration value="material_fep" />
+      <xs:enumeration value="material_fiber_glass_reinforced_polyamide" />
+      <xs:enumeration value="material_foam_rubber" />
+      <xs:enumeration value="material_galvanized_steel" />
+      <xs:enumeration value="material_genuine_leather" />
+      <xs:enumeration value="material_glass" />
+      <xs:enumeration value="material_handmade_leather" />
+      <xs:enumeration value="material_imitation_leather" />
+      <xs:enumeration value="material_leather" />
+      <xs:enumeration value="material_leather_like_vinyl" />
+      <xs:enumeration value="material_lycra" />
+      <xs:enumeration value="material_magnesium_alloy" />
+      <xs:enumeration value="material_memory_foam" />
+      <xs:enumeration value="material_metal" />
+      <xs:enumeration value="material_microfibre" />
+      <xs:enumeration value="material_mixed_textile" />
+      <xs:enumeration value="material_mocca" />
+      <xs:enumeration value="material_molded_eva" />
+      <xs:enumeration value="material_neoprene" />
+      <xs:enumeration value="material_nonwovens" />
+      <xs:enumeration value="material_nylon" />
+      <xs:enumeration value="material_nylon_6_6" />
+      <xs:enumeration value="material_pc_abs" />
+      <xs:enumeration value="material_pet" />
+      <xs:enumeration value="material_pet_film" />
+      <xs:enumeration value="material_pet_polyethylene_terephthalate" />
+      <xs:enumeration value="material_plastic" />
+      <xs:enumeration value="material_polyamide" />
+      <xs:enumeration value="material_polybutulen" />
+      <xs:enumeration value="material_polybutylentereftalate" />
+      <xs:enumeration value="material_polycarbonate" />
+      <xs:enumeration value="material_polycarbonate_resin" />
+      <xs:enumeration value="material_polyester" />
+      <xs:enumeration value="material_polyethylene" />
+      <xs:enumeration value="material_polymer" />
+      <xs:enumeration value="material_polystyrene" />
+      <xs:enumeration value="material_polyurethane" />
+      <xs:enumeration value="material_polyurethane_leather" />
+      <xs:enumeration value="material_powder_coated_steel" />
+      <xs:enumeration value="material_ptfe" />
+      <xs:enumeration value="material_pvc" />
+      <xs:enumeration value="material_recycled_pet" />
+      <xs:enumeration value="material_ripstop" />
+      <xs:enumeration value="material_ripstop_nylon" />
+      <xs:enumeration value="material_rubber" />
+      <xs:enumeration value="material_rubber_foam" />
+      <xs:enumeration value="material_sbr" />
+      <xs:enumeration value="material_silicone" />
+      <xs:enumeration value="material_spandex" />
+      <xs:enumeration value="material_stainless_steel" />
+      <xs:enumeration value="material_steel" />
+      <xs:enumeration value="material_structural_plastics" />
+      <xs:enumeration value="material_sturdy_plastic" />
+      <xs:enumeration value="material_synthetic_leather" />
+      <xs:enumeration value="material_teflon" />
+      <xs:enumeration value="material_tempered_glass" />
+      <xs:enumeration value="material_thermoplastic_polyurethane" />
+      <xs:enumeration value="material_twill" />
+      <xs:enumeration value="material_untreated_fabric" />
+      <xs:enumeration value="material_velour" />
+      <xs:enumeration value="material_velvet" />
+      <xs:enumeration value="material_wood" />
+      <xs:enumeration value="material_zinc_alloy" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="max_print_resolution_black">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="max_print_resolution_black_1200x1200" />
+      <xs:enumeration value="max_print_resolution_black_1200x2400" />
+      <xs:enumeration value="max_print_resolution_black_1200x600" />
+      <xs:enumeration value="max_print_resolution_black_1200x6000" />
+      <xs:enumeration value="max_print_resolution_black_2400x1200" />
+      <xs:enumeration value="max_print_resolution_black_2400x600" />
+      <xs:enumeration value="max_print_resolution_black_2880x1440" />
+      <xs:enumeration value="max_print_resolution_black_300x300" />
+      <xs:enumeration value="max_print_resolution_black_300x720" />
+      <xs:enumeration value="max_print_resolution_black_4800x1200" />
+      <xs:enumeration value="max_print_resolution_black_4800x600" />
+      <xs:enumeration value="max_print_resolution_black_5760x1400" />
+      <xs:enumeration value="max_print_resolution_black_5760x1440" />
+      <xs:enumeration value="max_print_resolution_black_6000x1200" />
+      <xs:enumeration value="max_print_resolution_black_600x1200" />
+      <xs:enumeration value="max_print_resolution_black_600x2400" />
+      <xs:enumeration value="max_print_resolution_black_600x600" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="max_print_resolution_color">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="max_print_resolution_color_1200x1200" />
+      <xs:enumeration value="max_print_resolution_color_1200x2400" />
+      <xs:enumeration value="max_print_resolution_color_1200x600" />
+      <xs:enumeration value="max_print_resolution_color_1200x6000" />
+      <xs:enumeration value="max_print_resolution_color_1440x720" />
+      <xs:enumeration value="max_print_resolution_color_2400x1200" />
+      <xs:enumeration value="max_print_resolution_color_2400x600" />
+      <xs:enumeration value="max_print_resolution_color_2880x1440" />
+      <xs:enumeration value="max_print_resolution_color_300x300" />
+      <xs:enumeration value="max_print_resolution_color_38400x600" />
+      <xs:enumeration value="max_print_resolution_color_4800x1200" />
+      <xs:enumeration value="max_print_resolution_color_4800x2400" />
+      <xs:enumeration value="max_print_resolution_color_4800x600" />
+      <xs:enumeration value="max_print_resolution_color_5760x1400" />
+      <xs:enumeration value="max_print_resolution_color_5760x1440" />
+      <xs:enumeration value="max_print_resolution_color_6000x1200" />
+      <xs:enumeration value="max_print_resolution_color_600x1200" />
+      <xs:enumeration value="max_print_resolution_color_600x1600" />
+      <xs:enumeration value="max_print_resolution_color_600x2400" />
+      <xs:enumeration value="max_print_resolution_color_600x600" />
+      <xs:enumeration value="max_print_resolution_color_9600x2400" />
+      <xs:enumeration value="max_print_resolution_color_9600x600" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="max_resolution">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="max_resolution_1080x720" />
+      <xs:enumeration value="max_resolution_1280x1024" />
+      <xs:enumeration value="max_resolution_1280x720" />
+      <xs:enumeration value="max_resolution_1280x800" />
+      <xs:enumeration value="max_resolution_1440x1080" />
+      <xs:enumeration value="max_resolution_1600x1200" />
+      <xs:enumeration value="max_resolution_160x120" />
+      <xs:enumeration value="max_resolution_1920x1080" />
+      <xs:enumeration value="max_resolution_1920x1200" />
+      <xs:enumeration value="max_resolution_1920x1440" />
+      <xs:enumeration value="max_resolution_2048x1152" />
+      <xs:enumeration value="max_resolution_2048x1536" />
+      <xs:enumeration value="max_resolution_2560x1440" />
+      <xs:enumeration value="max_resolution_2560x1600" />
+      <xs:enumeration value="max_resolution_3840x2160" />
+      <xs:enumeration value="max_resolution_3840x2400" />
+      <xs:enumeration value="max_resolution_4096x1600" />
+      <xs:enumeration value="max_resolution_4096x2160" />
+      <xs:enumeration value="max_resolution_4096x3112" />
+      <xs:enumeration value="max_resolution_5120x3200" />
+      <xs:enumeration value="max_resolution_640x480" />
+      <xs:enumeration value="max_resolution_7680x3200" />
+      <xs:enumeration value="max_resolution_800x600" />
+      <xs:enumeration value="max_resolution_960x720" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="memory_card_format">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="memory_card_format_compactflash" />
+      <xs:enumeration value="memory_card_format_microsd" />
+      <xs:enumeration value="memory_card_format_microsdhc" />
+      <xs:enumeration value="memory_card_format_microsdxc" />
+      <xs:enumeration value="memory_card_format_multimediacard" />
+      <xs:enumeration value="memory_card_format_sd" />
+      <xs:enumeration value="memory_card_format_sdhc" />
+      <xs:enumeration value="memory_card_format_sdxc" />
+      <xs:enumeration value="memory_card_format_xd_picture_card" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="memory_card_reader_location">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="express_card_34" />
+      <xs:enumeration value="external" />
+      <xs:enumeration value="inch-tray_3_5" />
+      <xs:enumeration value="inch-tray_5_25" />
+      <xs:enumeration value="pc-card" />
+      <xs:enumeration value="pci_express_card" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mobile_broadband_generation">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="mobile_broadband_generation_3g" />
+      <xs:enumeration value="mobile_broadband_generation_4g" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="motherboard_form_factor">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="motherboard_form_factor_atx" />
+      <xs:enumeration value="motherboard_form_factor_dtx" />
+      <xs:enumeration value="motherboard_form_factor_extended_atx" />
+      <xs:enumeration value="motherboard_form_factor_hptx" />
+      <xs:enumeration value="motherboard_form_factor_manufacturer_specific" />
+      <xs:enumeration value="motherboard_form_factor_micro_atx" />
+      <xs:enumeration value="motherboard_form_factor_mini_atx" />
+      <xs:enumeration value="motherboard_form_factor_mini_dtx" />
+      <xs:enumeration value="motherboard_form_factor_mini_itx" />
+      <xs:enumeration value="motherboard_form_factor_ssi_ceb" />
+      <xs:enumeration value="motherboard_form_factor_ssi_eeb" />
+      <xs:enumeration value="motherboard_form_factor_ssi_meb" />
+      <xs:enumeration value="motherboard_form_factor_thin_mini_itx" />
+      <xs:enumeration value="motherboard_form_factor_xl_atx" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="mount_placement">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="mount_placement_ceiling" />
+      <xs:enumeration value="mount_placement_floor" />
+      <xs:enumeration value="mount_placement_table" />
+      <xs:enumeration value="mount_placement_wall" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="navigation_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="navigation_type_car" />
+      <xs:enumeration value="navigation_type_hiking" />
+      <xs:enumeration value="navigation_type_motorcycle" />
+      <xs:enumeration value="navigation_type_running" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="network_cable_category">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="network_cable_category_cat5" />
+      <xs:enumeration value="network_cable_category_cat5e" />
+      <xs:enumeration value="network_cable_category_cat6" />
+      <xs:enumeration value="network_cable_category_cat6a" />
+      <xs:enumeration value="network_cable_category_cat7" />
+      <xs:enumeration value="network_cable_category_cat7_plus" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="operating_system">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="operating_system_android" />
+      <xs:enumeration value="operating_system_apple_watch_os" />
+      <xs:enumeration value="operating_system_blackberry_os" />
+      <xs:enumeration value="operating_system_chrome_os" />
+      <xs:enumeration value="operating_system_fire_os" />
+      <xs:enumeration value="operating_system_ios" />
+      <xs:enumeration value="operating_system_linux" />
+      <xs:enumeration value="operating_system_mac_os" />
+      <xs:enumeration value="operating_system_os_x" />
+      <xs:enumeration value="operating_system_pebble_os" />
+      <xs:enumeration value="operating_system_samsung" />
+      <xs:enumeration value="operating_system_tizen" />
+      <xs:enumeration value="operating_system_windows" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="panel_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="panel_type_a_mva" />
+      <xs:enumeration value="panel_type_a_mva_plus" />
+      <xs:enumeration value="panel_type_ad_pls" />
+      <xs:enumeration value="panel_type_ads_ips" />
+      <xs:enumeration value="panel_type_affs_plus" />
+      <xs:enumeration value="panel_type_ah_ips" />
+      <xs:enumeration value="panel_type_ahva" />
+      <xs:enumeration value="panel_type_e_ips" />
+      <xs:enumeration value="panel_type_h_ips" />
+      <xs:enumeration value="panel_type_ips" />
+      <xs:enumeration value="panel_type_ips2" />
+      <xs:enumeration value="panel_type_mva" />
+      <xs:enumeration value="panel_type_p_ips" />
+      <xs:enumeration value="panel_type_pls" />
+      <xs:enumeration value="panel_type_pva" />
+      <xs:enumeration value="panel_type_s_ips" />
+      <xs:enumeration value="panel_type_s_ips_plus" />
+      <xs:enumeration value="panel_type_s_pva" />
+      <xs:enumeration value="panel_type_super_pls" />
+      <xs:enumeration value="panel_type_tn" />
+      <xs:enumeration value="panel_type_va" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="paper_size_supported">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="paper_size_supported_a1" />
+      <xs:enumeration value="paper_size_supported_a3" />
+      <xs:enumeration value="paper_size_supported_a3_plus" />
+      <xs:enumeration value="paper_size_supported_a4" />
+      <xs:enumeration value="paper_size_supported_a5" />
+      <xs:enumeration value="paper_size_supported_a6" />
+      <xs:enumeration value="paper_size_supported_b3" />
+      <xs:enumeration value="paper_size_supported_b4" />
+      <xs:enumeration value="paper_size_supported_b5" />
+      <xs:enumeration value="paper_size_supported_b6" />
+      <xs:enumeration value="paper_size_supported_c5" />
+      <xs:enumeration value="paper_size_supported_c6" />
+      <xs:enumeration value="paper_size_supported_photo_10x15" />
+      <xs:enumeration value="paper_size_supported_roll_32_9cm" />
+      <xs:enumeration value="paper_size_supported_roll_6_2cm" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="phone_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="answering_machine" />
+      <xs:enumeration value="caller-id" />
+      <xs:enumeration value="multi-lines" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="plugsocket_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_a" />
+      <xs:enumeration value="type_b" />
+      <xs:enumeration value="type_c" />
+      <xs:enumeration value="type_d" />
+      <xs:enumeration value="type_e" />
+      <xs:enumeration value="type_f" />
+      <xs:enumeration value="type_g" />
+      <xs:enumeration value="type_h" />
+      <xs:enumeration value="type_i" />
+      <xs:enumeration value="type_j" />
+      <xs:enumeration value="type_k" />
+      <xs:enumeration value="type_l" />
+      <xs:enumeration value="type_m" />
+      <xs:enumeration value="type_n" />
+      <xs:enumeration value="type_o" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="power_management">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="power_management_ac_adapter" />
+      <xs:enumeration value="power_management_battery" />
+      <xs:enumeration value="power_management_esata" />
+      <xs:enumeration value="power_management_thunderbolt" />
+      <xs:enumeration value="power_management_usb" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="print_server_placement">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="internal" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="printer_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="printer_functions_copying" />
+      <xs:enumeration value="printer_functions_faxing" />
+      <xs:enumeration value="printer_functions_photo_printing" />
+      <xs:enumeration value="printer_functions_scanning" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="printer_interfaces">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="printer_interfaces_airprint" />
+      <xs:enumeration value="printer_interfaces_bluetooth" />
+      <xs:enumeration value="printer_interfaces_googlecloudprint" />
+      <xs:enumeration value="printer_interfaces_lan" />
+      <xs:enumeration value="printer_interfaces_nfc" />
+      <xs:enumeration value="printer_interfaces_parallel" />
+      <xs:enumeration value="printer_interfaces_pictbridge" />
+      <xs:enumeration value="printer_interfaces_usb" />
+      <xs:enumeration value="printer_interfaces_usb_2_0" />
+      <xs:enumeration value="printer_interfaces_usb_host" />
+      <xs:enumeration value="printer_interfaces_wi_fi" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="processor_generation">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="processor_generation_2" />
+      <xs:enumeration value="processor_generation_3" />
+      <xs:enumeration value="processor_generation_4" />
+      <xs:enumeration value="processor_generation_5" />
+      <xs:enumeration value="processor_generation_6" />
+      <xs:enumeration value="processor_generation_7" />
+      <xs:enumeration value="processor_generation_8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="processor_model">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="processor_model_a_series" />
+      <xs:enumeration value="processor_model_a10_series" />
+      <xs:enumeration value="processor_model_a4_series" />
+      <xs:enumeration value="processor_model_a6_series" />
+      <xs:enumeration value="processor_model_a8_series" />
+      <xs:enumeration value="processor_model_athlon" />
+      <xs:enumeration value="processor_model_athlon_ii_x4" />
+      <xs:enumeration value="processor_model_atm7021a" />
+      <xs:enumeration value="processor_model_atom" />
+      <xs:enumeration value="processor_model_atom_x5" />
+      <xs:enumeration value="processor_model_celeron" />
+      <xs:enumeration value="processor_model_core_i3" />
+      <xs:enumeration value="processor_model_core_i5" />
+      <xs:enumeration value="processor_model_core_i7" />
+      <xs:enumeration value="processor_model_core_i7_extreme_edition" />
+      <xs:enumeration value="processor_model_core_m" />
+      <xs:enumeration value="processor_model_core_m3" />
+      <xs:enumeration value="processor_model_core_m5" />
+      <xs:enumeration value="processor_model_fx" />
+      <xs:enumeration value="processor_model_pentium" />
+      <xs:enumeration value="processor_model_xeon" />
+      <xs:enumeration value="processor_model_xeon_e3_1200_v2_series" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="projector_technology">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="dlp" />
+      <xs:enumeration value="laser" />
+      <xs:enumeration value="lcd" />
+      <xs:enumeration value="lcos" />
+      <xs:enumeration value="led" />
+      <xs:enumeration value="sxrd" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="psu_format">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="sfx" />
+      <xs:enumeration value="tfx" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="raid_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="raid_type_jbod" />
+      <xs:enumeration value="raid_type_raid0" />
+      <xs:enumeration value="raid_type_raid01" />
+      <xs:enumeration value="raid_type_raid1" />
+      <xs:enumeration value="raid_type_raid10" />
+      <xs:enumeration value="raid_type_raid5" />
+      <xs:enumeration value="raid_type_raid50" />
+      <xs:enumeration value="raid_type_raid6" />
+      <xs:enumeration value="raid_type_raid60" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ram_form_factor">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ram_form_factor_dimm_184_pin" />
+      <xs:enumeration value="ram_form_factor_dimm_240_pin" />
+      <xs:enumeration value="ram_form_factor_dimm_288_pin" />
+      <xs:enumeration value="ram_form_factor_so_dimm_200_pin" />
+      <xs:enumeration value="ram_form_factor_so_dimm_204_pin" />
+      <xs:enumeration value="ram_form_factor_so_dimm_260_pin" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="reception_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="reception_type_am" />
+      <xs:enumeration value="reception_type_fm" />
+      <xs:enumeration value="reception_type_uhf" />
+      <xs:enumeration value="reception_type_vhf" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="remote_control_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="battery_indicator" />
+      <xs:enumeration value="docking_station" />
+      <xs:enumeration value="programmable" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="scanner_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="document_scanner" />
+      <xs:enumeration value="film_scanners" />
+      <xs:enumeration value="flatbed_scanner" />
+      <xs:enumeration value="threedimensional_scanners" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="screen_protection_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="screen_protection_type_anti_glare" />
+      <xs:enumeration value="screen_protection_type_anti_scratch" />
+      <xs:enumeration value="screen_protection_type_glossy" />
+      <xs:enumeration value="screen_protection_type_privacy" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="screen_resolution">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="screen_resolution_1024x600" />
+      <xs:enumeration value="screen_resolution_1024x758" />
+      <xs:enumeration value="screen_resolution_1024x768" />
+      <xs:enumeration value="screen_resolution_102x65" />
+      <xs:enumeration value="screen_resolution_103x65" />
+      <xs:enumeration value="screen_resolution_108x84" />
+      <xs:enumeration value="screen_resolution_1136x640" />
+      <xs:enumeration value="screen_resolution_1200x800" />
+      <xs:enumeration value="screen_resolution_1280x1024" />
+      <xs:enumeration value="screen_resolution_1280x720" />
+      <xs:enumeration value="screen_resolution_1280x768" />
+      <xs:enumeration value="screen_resolution_1280x800" />
+      <xs:enumeration value="screen_resolution_128x128" />
+      <xs:enumeration value="screen_resolution_128x160" />
+      <xs:enumeration value="screen_resolution_128x32" />
+      <xs:enumeration value="screen_resolution_128x432" />
+      <xs:enumeration value="screen_resolution_128x64" />
+      <xs:enumeration value="screen_resolution_128x80" />
+      <xs:enumeration value="screen_resolution_128x88" />
+      <xs:enumeration value="screen_resolution_128x96" />
+      <xs:enumeration value="screen_resolution_132x32" />
+      <xs:enumeration value="screen_resolution_1334x750" />
+      <xs:enumeration value="screen_resolution_1360x768" />
+      <xs:enumeration value="screen_resolution_1366x768" />
+      <xs:enumeration value="screen_resolution_1400x1050" />
+      <xs:enumeration value="screen_resolution_1440x900" />
+      <xs:enumeration value="screen_resolution_144x176" />
+      <xs:enumeration value="screen_resolution_1600x1050" />
+      <xs:enumeration value="screen_resolution_1600x1200" />
+      <xs:enumeration value="screen_resolution_1600x900" />
+      <xs:enumeration value="screen_resolution_160x128" />
+      <xs:enumeration value="screen_resolution_1680x1050" />
+      <xs:enumeration value="screen_resolution_168x144" />
+      <xs:enumeration value="screen_resolution_176x220" />
+      <xs:enumeration value="screen_resolution_180x160" />
+      <xs:enumeration value="screen_resolution_180x180" />
+      <xs:enumeration value="screen_resolution_1920x1080" />
+      <xs:enumeration value="screen_resolution_1920x1200" />
+      <xs:enumeration value="screen_resolution_2048x1536" />
+      <xs:enumeration value="screen_resolution_216x432" />
+      <xs:enumeration value="screen_resolution_220x176" />
+      <xs:enumeration value="screen_resolution_2304x1440" />
+      <xs:enumeration value="screen_resolution_240x240" />
+      <xs:enumeration value="screen_resolution_240x320" />
+      <xs:enumeration value="screen_resolution_2560x1080" />
+      <xs:enumeration value="screen_resolution_2560x1440" />
+      <xs:enumeration value="screen_resolution_2560x1600" />
+      <xs:enumeration value="screen_resolution_280x280" />
+      <xs:enumeration value="screen_resolution_2880x1620" />
+      <xs:enumeration value="screen_resolution_2880x1800" />
+      <xs:enumeration value="screen_resolution_296x128" />
+      <xs:enumeration value="screen_resolution_3200x1800" />
+      <xs:enumeration value="screen_resolution_320x222" />
+      <xs:enumeration value="screen_resolution_320x240" />
+      <xs:enumeration value="screen_resolution_320x320" />
+      <xs:enumeration value="screen_resolution_320x480" />
+      <xs:enumeration value="screen_resolution_3440x1440" />
+      <xs:enumeration value="screen_resolution_360x325" />
+      <xs:enumeration value="screen_resolution_360x330" />
+      <xs:enumeration value="screen_resolution_3840x2126" />
+      <xs:enumeration value="screen_resolution_3840x2160" />
+      <xs:enumeration value="screen_resolution_396x162" />
+      <xs:enumeration value="screen_resolution_400x240" />
+      <xs:enumeration value="screen_resolution_400x400" />
+      <xs:enumeration value="screen_resolution_4096x2160" />
+      <xs:enumeration value="screen_resolution_4096x2304" />
+      <xs:enumeration value="screen_resolution_432x240" />
+      <xs:enumeration value="screen_resolution_480x272" />
+      <xs:enumeration value="screen_resolution_480x360" />
+      <xs:enumeration value="screen_resolution_480x854" />
+      <xs:enumeration value="screen_resolution_5120x2880" />
+      <xs:enumeration value="screen_resolution_600x800" />
+      <xs:enumeration value="screen_resolution_640x480" />
+      <xs:enumeration value="screen_resolution_70x70" />
+      <xs:enumeration value="screen_resolution_768x1024" />
+      <xs:enumeration value="screen_resolution_800x480" />
+      <xs:enumeration value="screen_resolution_800x600" />
+      <xs:enumeration value="screen_resolution_854x480" />
+      <xs:enumeration value="screen_resolution_940x560" />
+      <xs:enumeration value="screen_resolution_960x540" />
+      <xs:enumeration value="screen_resolution_960x640" />
+      <xs:enumeration value="screen_resolution_960x960" />
+      <xs:enumeration value="screen_resolution_96x64" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="screen_surface_color">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="grey" />
+      <xs:enumeration value="silver" />
+      <xs:enumeration value="white" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sim_card_size">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="sim_card_size_micro" />
+      <xs:enumeration value="sim_card_size_mini" />
+      <xs:enumeration value="sim_card_size_nano" />
+      <xs:enumeration value="sim_card_size_standard" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="socket_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="socket_type_am1" />
+      <xs:enumeration value="socket_type_am3plus" />
+      <xs:enumeration value="socket_type_fm1" />
+      <xs:enumeration value="socket_type_fm2" />
+      <xs:enumeration value="socket_type_fm2plus" />
+      <xs:enumeration value="socket_type_lga1150" />
+      <xs:enumeration value="socket_type_lga1151" />
+      <xs:enumeration value="socket_type_lga1155" />
+      <xs:enumeration value="socket_type_lga1156" />
+      <xs:enumeration value="socket_type_lga1170" />
+      <xs:enumeration value="socket_type_lga1366" />
+      <xs:enumeration value="socket_type_lga2011" />
+      <xs:enumeration value="socket_type_lga2011_v3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sound_card_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="sound_card_type_5_0" />
+      <xs:enumeration value="sound_card_type_5_1" />
+      <xs:enumeration value="sound_card_type_7_1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sound_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="sound_type_mono" />
+      <xs:enumeration value="sound_type_stereo" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="speaker_configuration">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="speaker_configuration_1_0_channel" />
+      <xs:enumeration value="speaker_configuration_1_1_channel" />
+      <xs:enumeration value="speaker_configuration_2_1_channel" />
+      <xs:enumeration value="speaker_configuration_3_1_channel" />
+      <xs:enumeration value="speaker_configuration_4_1_channel" />
+      <xs:enumeration value="speaker_configuration_5_0_channel" />
+      <xs:enumeration value="speaker_configuration_5_1_channel" />
+      <xs:enumeration value="speaker_configuration_6_1_channel" />
+      <xs:enumeration value="speaker_configuration_7_1_channel" />
+      <xs:enumeration value="speaker_configuration_8_1_channel" />
+      <xs:enumeration value="speaker_configuration_9_1_channel" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="stereo_features">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bluetooth" />
+      <xs:enumeration value="cassette_player" />
+      <xs:enumeration value="cd_player" />
+      <xs:enumeration value="docking" />
+      <xs:enumeration value="radio_tuner" />
+      <xs:enumeration value="turntable" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="supported_motherboards">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="supported_motherboards_atx" />
+      <xs:enumeration value="supported_motherboards_btx" />
+      <xs:enumeration value="supported_motherboards_dtx" />
+      <xs:enumeration value="supported_motherboards_extended_atx" />
+      <xs:enumeration value="supported_motherboards_hptx" />
+      <xs:enumeration value="supported_motherboards_micro_atx" />
+      <xs:enumeration value="supported_motherboards_micro_btx" />
+      <xs:enumeration value="supported_motherboards_mini_atx" />
+      <xs:enumeration value="supported_motherboards_mini_itx" />
+      <xs:enumeration value="supported_motherboards_nano_itx" />
+      <xs:enumeration value="supported_motherboards_pico_btx" />
+      <xs:enumeration value="supported_motherboards_pico_itx" />
+      <xs:enumeration value="supported_motherboards_ssi_ceb" />
+      <xs:enumeration value="supported_motherboards_ssi_eeb" />
+      <xs:enumeration value="supported_motherboards_ucff_nuc" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="supported_operators">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="boxer" />
+      <xs:enumeration value="canaldigital" />
+      <xs:enumeration value="comhem" />
+      <xs:enumeration value="riks-tv" />
+      <xs:enumeration value="viasat" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="supported_resolution_formats">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="supported_resolution_formats_1080i" />
+      <xs:enumeration value="supported_resolution_formats_1080p" />
+      <xs:enumeration value="supported_resolution_formats_480p" />
+      <xs:enumeration value="supported_resolution_formats_4k" />
+      <xs:enumeration value="supported_resolution_formats_576p" />
+      <xs:enumeration value="supported_resolution_formats_720p" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="supported_video_formats">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="supported_video_formats_1080i" />
+      <xs:enumeration value="supported_video_formats_1080p" />
+      <xs:enumeration value="supported_video_formats_2160p" />
+      <xs:enumeration value="supported_video_formats_4320p" />
+      <xs:enumeration value="supported_video_formats_480i" />
+      <xs:enumeration value="supported_video_formats_720i" />
+      <xs:enumeration value="supported_video_formats_720p" />
+      <xs:enumeration value="supported_video_formats_vga_640x480" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tablet_cases_and_covers_compability">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_4th_gen" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_air" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_air_2" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_mini" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_mini_2" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_mini_3" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_mini_4" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_pro_12_9_inch" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_apple_ipad_pro_9_7_inch" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_samsung_galaxy_tab_3_10_1_inch" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_samsung_galaxy_tab_4_active_8_inch" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_samsung_galaxy_tab_a_10_1" />
+      <xs:enumeration value="tablet_cases_and_covers_compability_samsung_galaxy_tab_s2_9_7" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="trackball_connectors">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="trackball_connectors_2_4ghz" />
+      <xs:enumeration value="trackball_connectors_5ghz" />
+      <xs:enumeration value="trackball_connectors_bluetooth" />
+      <xs:enumeration value="trackball_connectors_bluetooth_4_0" />
+      <xs:enumeration value="trackball_connectors_ps_2" />
+      <xs:enumeration value="trackball_connectors_rf" />
+      <xs:enumeration value="trackball_connectors_usb" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tuner_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="tuner_type_am" />
+      <xs:enumeration value="tuner_type_dab" />
+      <xs:enumeration value="tuner_type_dab_plus" />
+      <xs:enumeration value="tuner_type_fm" />
+      <xs:enumeration value="tuner_type_internetradio" />
+      <xs:enumeration value="tuner_type_rds_radio" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="turntable_drive_method">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="turntable_drive_method_belt_driven" />
+      <xs:enumeration value="turntable_drive_method_direct_driven" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tv_display_technology">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="tv_display_technology_lcd" />
+      <xs:enumeration value="tv_display_technology_led" />
+      <xs:enumeration value="tv_display_technology_oled" />
+      <xs:enumeration value="tv_display_technology_plasma" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_binocular">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="binocular" />
+      <xs:enumeration value="monocular" />
+      <xs:enumeration value="observation_binoculars" />
+      <xs:enumeration value="spotting_scope" />
+      <xs:enumeration value="telescope" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_binocular_accessories">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="adapter" />
+      <xs:enumeration value="lens_accessories" />
+      <xs:enumeration value="strap" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_camera_bag">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_camera_bag_backpack" />
+      <xs:enumeration value="type_of_camera_bag_bumper" />
+      <xs:enumeration value="type_of_camera_bag_carrying_case" />
+      <xs:enumeration value="type_of_camera_bag_cases" />
+      <xs:enumeration value="type_of_camera_bag_hard_case" />
+      <xs:enumeration value="type_of_camera_bag_holster_case" />
+      <xs:enumeration value="type_of_camera_bag_pouch" />
+      <xs:enumeration value="type_of_camera_bag_protective_case" />
+      <xs:enumeration value="type_of_camera_bag_shoulder_bag" />
+      <xs:enumeration value="type_of_camera_bag_wallet" />
+      <xs:enumeration value="type_of_camera_bag_waterproof_cases" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_camera_handle">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="dual_hand_grips" />
+      <xs:enumeration value="side_handles" />
+      <xs:enumeration value="single_hand_grips" />
+      <xs:enumeration value="topside_hand_grips" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_camera_lens">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_camera_lens_fisheye" />
+      <xs:enumeration value="type_of_camera_lens_macro" />
+      <xs:enumeration value="type_of_camera_lens_macro_zoom" />
+      <xs:enumeration value="type_of_camera_lens_normal" />
+      <xs:enumeration value="type_of_camera_lens_tele" />
+      <xs:enumeration value="type_of_camera_lens_tele_zoom" />
+      <xs:enumeration value="type_of_camera_lens_wide_angle" />
+      <xs:enumeration value="type_of_camera_lens_wide_angle_zoom" />
+      <xs:enumeration value="type_of_camera_lens_zoom" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_cellphone">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_cellphone_featurephone" />
+      <xs:enumeration value="type_of_cellphone_smartphone" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_cellphone_charger">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="lightning" />
+      <xs:enumeration value="micro-usb" />
+      <xs:enumeration value="mini-usb" />
+      <xs:enumeration value="pin-30" />
+      <xs:enumeration value="usb_type-c" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_chassis">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_chassis_cube" />
+      <xs:enumeration value="type_of_chassis_desktop" />
+      <xs:enumeration value="type_of_chassis_fulltower" />
+      <xs:enumeration value="type_of_chassis_htpc" />
+      <xs:enumeration value="type_of_chassis_microtower" />
+      <xs:enumeration value="type_of_chassis_miditower" />
+      <xs:enumeration value="type_of_chassis_minidesktop_pc" />
+      <xs:enumeration value="type_of_chassis_minitower" />
+      <xs:enumeration value="type_of_chassis_test_bench" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_cover">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_cover_backpack" />
+      <xs:enumeration value="type_of_cover_carrying_case" />
+      <xs:enumeration value="type_of_cover_cases" />
+      <xs:enumeration value="type_of_cover_holster_case" />
+      <xs:enumeration value="type_of_cover_protective_case" />
+      <xs:enumeration value="type_of_cover_shoulder_bag" />
+      <xs:enumeration value="type_of_cover_wallet" />
+      <xs:enumeration value="type_of_cover_wrist_bag" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_developing_and_processing_equipm">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="film_washers" />
+      <xs:enumeration value="print_washers" />
+      <xs:enumeration value="tanks_and_drums" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_digital_tuner">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_digital_tuner_dvb_c" />
+      <xs:enumeration value="type_of_digital_tuner_dvb_c2" />
+      <xs:enumeration value="type_of_digital_tuner_dvb_s" />
+      <xs:enumeration value="type_of_digital_tuner_dvb_s2" />
+      <xs:enumeration value="type_of_digital_tuner_dvb_t" />
+      <xs:enumeration value="type_of_digital_tuner_dvb_t2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_disc_drive">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="front_loaded_with_tray" />
+      <xs:enumeration value="slot-in" />
+      <xs:enumeration value="top-fed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_electronics_cleaner">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="air_compressor_cleaning" />
+      <xs:enumeration value="lens_and_optics_cleaning" />
+      <xs:enumeration value="screen_and_display_cleaning" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_enlarging_equipment">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="enlargers" />
+      <xs:enumeration value="enlarging_heads" />
+      <xs:enumeration value="enlarging_lenses" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_flash">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ordinary_flash" />
+      <xs:enumeration value="ring_flash" />
+      <xs:enumeration value="slave_flash" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_flash_accessories">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="flash_modifiers" />
+      <xs:enumeration value="flash_pouches" />
+      <xs:enumeration value="hot_shoe_adapters" />
+      <xs:enumeration value="ring_lights" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_gps_mount">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bike_mount" />
+      <xs:enumeration value="car_mount" />
+      <xs:enumeration value="motor_cycle" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_light_meter">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="analogue" />
+      <xs:enumeration value="digital" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_mobile_broadband">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_mobile_broadband_3g" />
+      <xs:enumeration value="type_of_mobile_broadband_4g" />
+      <xs:enumeration value="type_of_mobile_broadband_5g" />
+      <xs:enumeration value="type_of_mobile_broadband_cdma_evo" />
+      <xs:enumeration value="type_of_mobile_broadband_nmt" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_photo_chemicals">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="film_processors" />
+      <xs:enumeration value="fixers" />
+      <xs:enumeration value="paper_processors" />
+      <xs:enumeration value="stop_baths" />
+      <xs:enumeration value="toners" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_printer_accessories">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="cleaning_maintenance" />
+      <xs:enumeration value="filteration_system" />
+      <xs:enumeration value="label_rewinder" />
+      <xs:enumeration value="printhead" />
+      <xs:enumeration value="templates" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_safelight">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="coated_bulb" />
+      <xs:enumeration value="round" />
+      <xs:enumeration value="size_10x12" />
+      <xs:enumeration value="size_5x7" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_speaker">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="component_speaker_system" />
+      <xs:enumeration value="crossovers" />
+      <xs:enumeration value="full-range_speakers" />
+      <xs:enumeration value="mid-range_speakers" />
+      <xs:enumeration value="tweeters" />
+      <xs:enumeration value="woofers" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_spotting_scope_accessories">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bore_sight" />
+      <xs:enumeration value="laser_sight" />
+      <xs:enumeration value="protection" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_studio_lights">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ellipsoidals" />
+      <xs:enumeration value="focusing_floods" />
+      <xs:enumeration value="fresnels" />
+      <xs:enumeration value="multilight" />
+      <xs:enumeration value="scooplights" />
+      <xs:enumeration value="singlelight" />
+      <xs:enumeration value="softlights" />
+      <xs:enumeration value="spots" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_telescope_accessories">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="eyepiece" />
+      <xs:enumeration value="filter" />
+      <xs:enumeration value="lense" />
+      <xs:enumeration value="mount" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_tripodmonopod">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="type_of_tripodmonopod_clamp" />
+      <xs:enumeration value="type_of_tripodmonopod_monopod" />
+      <xs:enumeration value="type_of_tripodmonopod_stand" />
+      <xs:enumeration value="type_of_tripodmonopod_tripod_head" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_tripodmonopod_accessories">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="camera_stand_head" />
+      <xs:enumeration value="quick_release_plate" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="type_of_turntable">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="full-automatic" />
+      <xs:enumeration value="manual" />
+      <xs:enumeration value="semi-automatic" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="usage_of_speaker_cables">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bi-amp" />
+      <xs:enumeration value="bi-wire" />
+      <xs:enumeration value="single-wire" />
+      <xs:enumeration value="tri-wire" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="usb_version">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="channels_2_0" />
+      <xs:enumeration value="channels_3_1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="webcam_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="autofocus" />
+      <xs:enumeration value="built-in_microphone" />
+      <xs:enumeration value="digital_zoom" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="vehicle_camera_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="collision_warning" />
+      <xs:enumeration value="parking_mode" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="video_camera_functions">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="still_pictures" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

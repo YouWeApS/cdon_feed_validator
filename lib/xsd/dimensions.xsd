@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+  attributeFormDefault="unqualified"
+  elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:include schemaLocation="types.xsd" />
+
+  <xs:simpleType name="dimensionValue">
+    <xs:restriction base="nonNegativeDecimal">
+      <xs:fractionDigits value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="sizeUnit">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="um" />
+      <xs:enumeration value="µm" />
+      <xs:enumeration value="mm" />
+      <xs:enumeration value="cm" />
+      <xs:enumeration value="dm" />
+      <xs:enumeration value="m" />
+      <xs:enumeration value="km" />
+      <xs:enumeration value="in" />
+      <xs:enumeration value="ft" />
+      <xs:enumeration value="yd" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="size">
+    <xs:sequence>
+      <xs:element name="value" minOccurs="1" maxOccurs="1" type="dimensionValue" />
+      <xs:element name="unit" minOccurs="1" maxOccurs="1" type="sizeUnit" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="massUnit">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="mcg" />
+      <xs:enumeration value="µg" />
+      <xs:enumeration value="mg" />
+      <xs:enumeration value="g" />
+      <xs:enumeration value="hg" />
+      <xs:enumeration value="kg" />
+      <xs:enumeration value="t" />
+      <xs:enumeration value="gr" />
+      <xs:enumeration value="oz" />
+      <xs:enumeration value="lb" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="mass">
+    <xs:sequence>
+      <xs:element name="value" minOccurs="1" maxOccurs="1" type="dimensionValue" />
+      <xs:element name="unit" minOccurs="1" maxOccurs="1" type="massUnit" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dimensions">
+    <xs:sequence>
+      <xs:element name="height" minOccurs="0" maxOccurs="1" type="size" />
+      <xs:element name="width" minOccurs="0" maxOccurs="1" type="size" />
+      <xs:element name="length" minOccurs="0" maxOccurs="1" type="size" />
+      <xs:element name="weight" minOccurs="0" maxOccurs="1" type="mass" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

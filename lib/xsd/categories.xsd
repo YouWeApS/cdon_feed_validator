@@ -1,0 +1,2255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="attributes.xsd" />
+  <xs:element fixed="" name="adapters_3_5_mm_adapters" />
+  <xs:element fixed="" name="adapters_6_3_mm_adapters" />
+  <xs:element fixed="" name="adapters_antenna_adapters" />
+  <xs:element fixed="" name="adapters_bnc_adapters" />
+  <xs:element fixed="" name="adapters_displayport_adapters" />
+  <xs:element fixed="" name="adapters_dvi_adapters" />
+  <xs:element fixed="" name="adapters_firewire_adapters" />
+  <xs:element fixed="" name="adapters_hdmi_adapters" />
+  <xs:element fixed="" name="adapters_ide_adapters" />
+  <xs:element fixed="" name="adapters_midi_adapters" />
+  <xs:element fixed="" name="adapters_molex_adapters" />
+  <xs:element fixed="" name="adapters_network_adapters" />
+  <xs:element fixed="" name="adapters_optical_adapters" />
+  <xs:element fixed="" name="adapters_other_adapters" />
+  <xs:element fixed="" name="adapters_rca_adapters" />
+  <xs:element fixed="" name="adapters_sata_adapters" />
+  <xs:element fixed="" name="adapters_scart_adapters" />
+  <xs:element fixed="" name="adapters_speaker_adapters" />
+  <xs:element fixed="" name="adapters_speakon_adapters" />
+  <xs:element fixed="" name="adapters_usb_adapters" />
+  <xs:element fixed="" name="adapters_vga_adapters" />
+  <xs:element fixed="" name="adapters_xlr_adapters" />
+  <xs:element fixed="" name="audio_clock_radio" />
+  <xs:element name="audio_headphones_and_headsets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ear_piece_design" type="ear_piece_design" />
+        <xs:element minOccurs="0" maxOccurs="1" name="microphone" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="noice_cancelling" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="sound_type" type="sound_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="batteries_and_chargers_alkaline_batteries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_type" type="battery_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_voltage_v" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="batteries_and_chargers_battery_chargers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="charging_bays_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="batteries_and_chargers_button_cell_batteries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_type" type="battery_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_voltage_v" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="batteries_and_chargers_lithium_batteries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_capacity_mah" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_type" type="battery_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_voltage_v" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="batteries_and_chargers_rechargeable_batteries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_capacity_mah" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_type" type="battery_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_voltage_v" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="batteries_and_chargers_solar_chargers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_capacity_mah" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="capacity_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cable_management_cable_clips">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_width_on_cable_mm" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cable_management_cable_ties" />
+  <xs:element name="cable_management_cable_trays">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cable_management_patch_panels" />
+  <xs:element fixed="" name="cables_3_5_mm_cables" />
+  <xs:element fixed="" name="cables_6_3_mm_cables" />
+  <xs:element fixed="" name="cables_antenna_cables" />
+  <xs:element fixed="" name="cables_bnc_cables" />
+  <xs:element fixed="" name="cables_displayport_cables" />
+  <xs:element fixed="" name="cables_dvi_cables" />
+  <xs:element fixed="" name="cables_firewire_cables" />
+  <xs:element name="cables_hdmi_cables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hdmi_cable_performance" type="hdmi_cable_performance" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cables_ide_cables" />
+  <xs:element fixed="" name="cables_midi_cables" />
+  <xs:element fixed="" name="cables_molex_cables" />
+  <xs:element name="cables_network_cables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="network_cable_category" type="network_cable_category" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cables_optical_cables" />
+  <xs:element fixed="" name="cables_other_cables" />
+  <xs:element fixed="" name="cables_rca_cables" />
+  <xs:element fixed="" name="cables_sata_cables" />
+  <xs:element fixed="" name="cables_scart_cables" />
+  <xs:element name="cables_speaker_cables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="usage_of_speaker_cables" type="usage_of_speaker_cables" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cables_speakon_cables" />
+  <xs:element name="cables_usb_cables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_version" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cables_vga_cables" />
+  <xs:element fixed="" name="cables_xlr_cables" />
+  <xs:element name="camera_accessories_camera_bags_and_cases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_camera_bag" type="type_of_camera_bag" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="camera_accessories_camera_batteries" />
+  <xs:element fixed="" name="camera_accessories_camera_film" />
+  <xs:element name="camera_accessories_camera_flash_accessories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_flash_accessories" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="camera_accessories_camera_flashes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="rotating_head" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_flash" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="camera_accessories_camera_handles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_camera_handle" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="camera_accessories_camera_remote_controls">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_operating_range_m" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="camera_accessories_camera_straps" />
+  <xs:element fixed="" name="camera_accessories_flash_brackets" />
+  <xs:element name="camera_accessories_underwater_camera_housings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="maximum_diving_depth_m" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="camera_accessories_video_camera_lights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="camera_light_technology" type="camera_light_technology" />
+        <xs:element minOccurs="0" maxOccurs="1" name="capacity_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="camera_and_optic_accessories_dronebags" />
+  <xs:element fixed="" name="camera_and_optic_accessories_drones_accessories" />
+  <xs:element fixed="" name="camera_and_optic_accessories_gimbal" />
+  <xs:element fixed="" name="camera_and_optic_accessories_lens_accessories" />
+  <xs:element name="camera_and_optic_accessories_lenses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_focal_length_mm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="min_focal_length_mm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_camera_lens" type="type_of_camera_lens" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="camera_and_optic_accessories_tripod_and_monopod_accessories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_tripodmonopod_accessories" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="camera_and_optic_accessories_tripods_and_monopods">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_load_kg" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_working_height_cm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="min_working_height_cm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_tripodmonopod" type="type_of_tripodmonopod" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cameras_disposable_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="camera_resolution_mp" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_video_formats" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cameras_drones" />
+  <xs:element name="cameras_game_and_trail_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="camera_resolution_mp" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="optical_zoom_x" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cameras_instant_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_storage_type" type="data_storage_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="optical_zoom_x" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_video_formats" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="video_camera_functions" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="car_audio_systems_car_amplifiers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="high_level_input" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="low_level_output" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_channels_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="car_audio_systems_head_units">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="head_unit_features" type="head_unit_features" />
+        <xs:element minOccurs="0" maxOccurs="1" name="head_unit_form_factor" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="low_level_output" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_channels_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="car_audio_systems_marine_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_speaker" type="type_of_speaker" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="car_speakers_car_audio_subwoofers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="integrated_amplifier" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="car_speakers_coaxial_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_speaker" type="type_of_speaker" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cell_phone_accessories_activity_tracker_accessories" />
+  <xs:element fixed="" name="cell_phone_accessories_activity_trackers" />
+  <xs:element name="cell_phone_accessories_cell_phone_cases_and_covers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatiblecellphonemodel" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_cover" type="type_of_cover" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cell_phone_accessories_cell_phone_charms" />
+  <xs:element fixed="" name="cell_phone_accessories_cell_phone_headsets" />
+  <xs:element name="cell_phone_accessories_cell_phone_screen_protection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatiblecellphonemodel" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_protection_type" type="screen_protection_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cell_phone_accessories_cell_phone_signal_booster" />
+  <xs:element fixed="" name="cell_phone_accessories_game_controllers_for_smartphones" />
+  <xs:element fixed="" name="cell_phone_accessories_micro-sd" />
+  <xs:element fixed="" name="cell_phone_accessories_mobile_credit_card_reader" />
+  <xs:element fixed="" name="cell_phone_accessories_other_cell_phone_accessories" />
+  <xs:element name="cell_phone_accessories_sim_cards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="sim_card_size" type="sim_card_size" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cell_phone_accessories_smart_watch_accessories" />
+  <xs:element name="cell_phone_chargers_and_batteries_car_charger_">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_cellphone_charger" type="type_of_cellphone_charger" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell_phone_chargers_and_batteries_cell_phone_batteries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatiblecellphonemodel" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell_phone_chargers_and_batteries_cell_phone_chargers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_cellphone_charger" type="type_of_cellphone_charger" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="cell_phone_chargers_and_batteries_powerbanks" />
+  <xs:element fixed="" name="cell_phone_chargers_and_batteries_wireless_cell_phone_charging" />
+  <xs:element name="cell_phone_mounts_car_mounts_for_cell_phones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="rotatable_mount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell_phone_mounts_selfiesticks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_length_cm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="min_length_cm" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell_phones_and_accessories_cell_phones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="mobile_broadband_generation" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_system" type="operating_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_resolution" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_cellphone" type="type_of_cellphone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="communication_radios_guide_systems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_operating_range_m" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_receivers_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="communication_radios_radio_scanners" />
+  <xs:element name="communication_radios_two-way-radios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_operating_range_km" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_channels_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="waterproof" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="communication_radios_two-way-radios_for_hunting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_operating_range_km" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_channels_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="waterproof" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="communications_mobile_broadband">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_speed_down_mbits" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="data_speed_up_mbits" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_mobile_broadband" type="type_of_mobile_broadband" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computer_accessories_computer_warranties_and_services" />
+  <xs:element name="computer_accessories_external_optical_drive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="external_optical_drive_connectivity" type="external_optical_drive_connectivity" />
+        <xs:element minOccurs="0" maxOccurs="1" name="external_optical_drive_format" type="external_optical_drive_format" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_accessories_external_sound_cards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="da_audio" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="external_sound_card_power_management" type="external_sound_card_power_management" />
+        <xs:element minOccurs="0" maxOccurs="1" name="sound_card_type" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_accessories_external_tv_tuner_and_video_editing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_operating_system" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_accessories_memory_card_readers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_card_reader_location" type="memory_card_reader_location" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_accessories_monitor_screen_protectors_and_filters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_protection_type" type="screen_protection_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_audio_and_video_computer_microphones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="computer_microphone_usage" type="computer_microphone_usage" />
+        <xs:element minOccurs="0" maxOccurs="1" name="phantom_power" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_audio_and_video_computer_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="bluetooth" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="headphone_output" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="remote_control" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_configuration" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_audio_and_video_webcams">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_resolution" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="webcam_functions" type="webcam_functions" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_components_computer_cases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="capacity_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="psu_included" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_motherboards" type="supported_motherboards" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_chassis" type="type_of_chassis" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computer_components_controller_card" />
+  <xs:element name="computer_components_cpu_processors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="clock_frequency_ghz" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cpu_cores_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="processor_generation" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="processor_model" type="processor_model" />
+        <xs:element minOccurs="0" maxOccurs="1" name="socket_type" type="socket_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tdp_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computer_components_floppy_drives" />
+  <xs:element name="computer_components_graphics_cards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="graphics_memory_type" type="graphics_memory_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="graphics_processor_speed_mhz" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="graphics_processor_type" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_components_internal_memories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="internal_memory_type" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_speed_mhz" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ram_form_factor" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computer_components_internal_modems" />
+  <xs:element fixed="" name="computer_components_internal_network_cards" />
+  <xs:element fixed="" name="computer_components_internal_optical_drives" />
+  <xs:element fixed="" name="computer_components_internal_sound_cards" />
+  <xs:element fixed="" name="computer_components_internal_tv_tuner_and_video_editing" />
+  <xs:element fixed="" name="computer_components_io_ports" />
+  <xs:element name="computer_components_motherboards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="chipset" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="internal_memory_type" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="motherboard_form_factor" type="motherboard_form_factor" />
+        <xs:element minOccurs="0" maxOccurs="1" name="socket_type" type="socket_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_components_power_supplies_psu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="capacity_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="depth_mm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="modular" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="psu_format" type="psu_format" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computer_components_replacement_parts" />
+  <xs:element fixed="" name="computer_servers_blade_servers" />
+  <xs:element fixed="" name="computer_servers_rack_servers" />
+  <xs:element fixed="" name="computer_servers_server_accessories" />
+  <xs:element fixed="" name="computer_servers_tower_servers" />
+  <xs:element name="computer_software_antivirus_and_security_software">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cpu_support" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="language" type="language" />
+        <xs:element minOccurs="0" maxOccurs="1" name="license_type" type="license_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_software_design_and_illustration_software">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cpu_support" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="language" type="language" />
+        <xs:element minOccurs="0" maxOccurs="1" name="license_type" type="license_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_software_music_software">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cpu_support" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="language" type="language" />
+        <xs:element minOccurs="0" maxOccurs="1" name="license_type" type="license_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_software_operating_systems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cpu_support" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="language" type="language" />
+        <xs:element minOccurs="0" maxOccurs="1" name="license_type" type="license_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_software_other_software">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cpu_support" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="language" type="language" />
+        <xs:element minOccurs="0" maxOccurs="1" name="license_type" type="license_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computer_software_word_processing_and_presentation_software">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="cpu_support" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="language" type="language" />
+        <xs:element minOccurs="0" maxOccurs="1" name="license_type" type="license_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computers_and_peripheral_equipment_all_in_one_computers" />
+  <xs:element fixed="" name="computers_and_peripheral_equipment_barebone_computers" />
+  <xs:element fixed="" name="computers_and_peripheral_equipment_computer_packages" />
+  <xs:element name="computers_and_peripheral_equipment_desktop_computers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="graphics_processor_type" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="hard_drive_type" type="hard_drive_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_system" type="operating_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="processor_generation" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="processor_model" type="processor_model" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ram_size_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_chassis" type="type_of_chassis" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computers_and_peripheral_equipment_e-book_reader">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="computers_and_peripheral_equipment_laptops">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="graphics_processor_type" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_system" type="operating_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="processor_generation" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="processor_model" type="processor_model" />
+        <xs:element minOccurs="0" maxOccurs="1" name="ram_size_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_resolution" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computers_and_peripheral_equipment_monitor_accessories" />
+  <xs:element name="computers_and_peripheral_equipment_monitors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="aspect_ratio" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="panel_type" type="panel_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="pivot_function" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_resolution" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="computers_and_peripheral_equipment_single-board_computer" />
+  <xs:element name="computers_and_peripheral_equipment_tablets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_system" type="operating_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_resolution" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="connectors_3_5_mm_connectors" />
+  <xs:element fixed="" name="connectors_6_3_mm_connectors" />
+  <xs:element fixed="" name="connectors_antenna_connectors" />
+  <xs:element fixed="" name="connectors_bnc_connectors" />
+  <xs:element fixed="" name="connectors_displayport_connectors" />
+  <xs:element fixed="" name="connectors_dvi_connectors" />
+  <xs:element fixed="" name="connectors_firewire_connectors" />
+  <xs:element fixed="" name="connectors_hdmi_connectors" />
+  <xs:element fixed="" name="connectors_ide_connectors" />
+  <xs:element fixed="" name="connectors_midi_connectors" />
+  <xs:element fixed="" name="connectors_molex_connectors" />
+  <xs:element fixed="" name="connectors_network_connectors" />
+  <xs:element fixed="" name="connectors_optical_connectors" />
+  <xs:element fixed="" name="connectors_other_connectors" />
+  <xs:element fixed="" name="connectors_rca_connectors" />
+  <xs:element fixed="" name="connectors_sata_connectors" />
+  <xs:element fixed="" name="connectors_scart_connectors" />
+  <xs:element fixed="" name="connectors_speaker_connectors" />
+  <xs:element fixed="" name="connectors_speakon_connectors" />
+  <xs:element fixed="" name="connectors_usb_connectors" />
+  <xs:element fixed="" name="connectors_vga_connectors" />
+  <xs:element fixed="" name="connectors_xlr_connectors" />
+  <xs:element fixed="" name="data_storage_das_direct_attached_storage" />
+  <xs:element name="data_storage_nas_network_attached_storage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="built-in_hard_drive" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_hard_drive_slots_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="raid_type" type="raid_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="data_storage_san_storage_area_network" />
+  <xs:element fixed="" name="digital_cameras_360_cameras" />
+  <xs:element name="digital_cameras_action_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="action_camera_functions" type="action_camera_functions" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_video_formats" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="digital_cameras_compact_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="camera_resolution_mp" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="image_stabilizer" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="optical_zoom_x" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_video_formats" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="digital_cameras_system_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="camera_resolution_mp" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_video_formats" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="digital_cameras_vehicle_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_video_formats" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="vehicle_camera_functions" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="digital_cameras_video_cameras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="waterproof" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless_network" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="digital_photo_frame" />
+  <xs:element fixed="" name="electronics_accessories_3d-glasses" />
+  <xs:element name="electronics_accessories_electronics_cleaners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_electronics_cleaner" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="electronics_accessories_other_electronics_accessories" />
+  <xs:element name="electronics_accessories_remote_controls">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="remote_control_functions" type="remote_control_functions" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="electronics_accessories_tools_for_electronics" />
+  <xs:element name="electronics_accessories_touch_screen_gloves">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="electronics_accessories_touch_screen_pens" />
+  <xs:element fixed="" name="electronics_accessories_vr" />
+  <xs:element fixed="" name="fans_and_cooling_computer_case_fans" />
+  <xs:element name="fans_and_cooling_cpu_cooling_fans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+        <xs:element minOccurs="0" maxOccurs="1" name="noise_level_db" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="socket_type" type="socket_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="fans_and_cooling_fan_grills_and_filters" />
+  <xs:element fixed="" name="fans_and_cooling_graphics_card_fans" />
+  <xs:element fixed="" name="fans_and_cooling_hard_drive_cooling" />
+  <xs:element fixed="" name="fans_and_cooling_heat_sinks" />
+  <xs:element fixed="" name="fans_and_cooling_thermal_compound" />
+  <xs:element fixed="" name="fans_and_cooling_water_cooling" />
+  <xs:element name="gps_accessories_gps_bags_and_cases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_with_gps_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="waterproof" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gps_accessories_gps_mounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_gps_mount" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="gps_accessories_gps_software" />
+  <xs:element fixed="" name="gps_accessories_other_gps_accessories" />
+  <xs:element name="hard_drive_accessories_hard_drive_bags_and_cases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hard_drive_compatible_case" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hard_drive_accessories_hard_drive_docks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="docking_station_form_factor" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="esata" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="firewire" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_version" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="hard_drive_accessories_hard_drive_mounts" />
+  <xs:element fixed="" name="hard_drive_accessories_other_hard_drive_accessories" />
+  <xs:element name="hard_drives_external_hard_drives">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hard_drive_form_factor" type="hard_drive_form_factor" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="power_management" type="power_management" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="hard_drives_internal_hard_drives">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hard_drive_form_factor" type="hard_drive_form_factor" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="home_theatre_home_theatre_receivers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_channels_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="home_theatre_home_theatre_sound_bars">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="color_group" type="color_group" />
+        <xs:element minOccurs="0" maxOccurs="1" name="nominal_power_total_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_configuration" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="home_theatre_home_theatre_systems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="color_group" type="color_group" />
+        <xs:element minOccurs="0" maxOccurs="1" name="nominal_power_total_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_configuration" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="ink_toner_and_drums_drums_and_toner" />
+  <xs:element fixed="" name="ink_toner_and_drums_fax_film" />
+  <xs:element name="ink_toner_and_drums_ink_cartridges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="page_yield_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="input_device_accessories_keyboard_accessories" />
+  <xs:element fixed="" name="input_device_accessories_mouse_accessories" />
+  <xs:element fixed="" name="input_device_accessories_mouse_pad_accessories" />
+  <xs:element name="input_device_accessories_mouse_pads">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="input_device_accessories_wrist_rests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="input_devices_digital_pens" />
+  <xs:element fixed="" name="input_devices_gamepad" />
+  <xs:element fixed="" name="input_devices_graphics_tablets" />
+  <xs:element fixed="" name="input_devices_joystick" />
+  <xs:element name="input_devices_keyboards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="backlit_keyboard" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="compatible_platform" type="compatible_platform" />
+        <xs:element minOccurs="0" maxOccurs="1" name="keyboard_design" type="keyboard_design" />
+        <xs:element minOccurs="0" maxOccurs="1" name="keyboard_technology" type="keyboard_technology" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="input_devices_mice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_buttons" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_resolution_dpi" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="input_devices_mouse_and_keyboard_packages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="input_devices_numeric_keypads" />
+  <xs:element fixed="" name="input_devices_presentation_pointers" />
+  <xs:element fixed="" name="input_devices_simulators" />
+  <xs:element name="input_devices_trackballs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_buttons" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_resolution_dpi" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="trackball_connectors" type="trackball_connectors" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="input_devices_trackpads">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_resolution_dpi" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="input_devices_wheels" />
+  <xs:element fixed="" name="laptop_accessories_batteries" />
+  <xs:element fixed="" name="laptop_accessories_chargers" />
+  <xs:element fixed="" name="laptop_accessories_cooling_pads" />
+  <xs:element name="laptop_accessories_laptop_bags_and_cases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_cover" type="type_of_cover" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="laptop_accessories_laptop_docking_station" />
+  <xs:element fixed="" name="laptop_accessories_laptop_locks" />
+  <xs:element name="laptop_accessories_laptop_screen_protectors_and_filters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hard_drive_type" type="hard_drive_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="laptop_accessories_laptop_skins_and_decals" />
+  <xs:element name="laptop_accessories_laptop_stands_and_mounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_load_kg" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rotatable_mount" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="lighting_and_studio_background_tripods" />
+  <xs:element fixed="" name="lighting_and_studio_flash_reflectors" />
+  <xs:element fixed="" name="lighting_and_studio_light_meter_accessories" />
+  <xs:element name="lighting_and_studio_light_meters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_light_meter" type="type_of_light_meter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lighting_and_studio_light_stands_and_mounting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_working_height_cm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="min_working_height_cm" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="lighting_and_studio_light_tents" />
+  <xs:element fixed="" name="lighting_and_studio_lighting_filters_and_gels" />
+  <xs:element fixed="" name="lighting_and_studio_photography_backgrounds" />
+  <xs:element fixed="" name="lighting_and_studio_photography_shooting_tables" />
+  <xs:element fixed="" name="lighting_and_studio_soft_boxes_and_diffusions" />
+  <xs:element name="lighting_and_studio_studio_lights_and_flashes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_studio_lights" type="type_of_studio_lights" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="modding_computer_lighting" />
+  <xs:element fixed="" name="modding_front_panels" />
+  <xs:element fixed="" name="modding_sound_deadening_pads" />
+  <xs:element name="navigation_gps_receivers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="navigation_type" type="navigation_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="navigation_gps_trackers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="battery_time_days" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="gps_accuracy_m" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="gps_functions" type="gps_functions" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="networking_access_points">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_transfer_speed_mbits" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="networking_bridges">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_transfer_speed_mbits" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_lan_ports" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="networking_external_network_cards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_transfer_speed_mbits" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="external_network_card_type" type="external_network_card_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="networking_firewall" />
+  <xs:element name="networking_hubs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_transfer_speed_mbits" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="networking_kvm_switches" />
+  <xs:element name="networking_modems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_transfer_speed_mbits" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="networking_network_accessories" />
+  <xs:element name="networking_network_antennas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_link_layer" type="data_link_layer" />
+        <xs:element minOccurs="0" maxOccurs="1" name="reinforcement_level_dbi" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="networking_network_switches" />
+  <xs:element fixed="" name="networking_other_network_products" />
+  <xs:element fixed="" name="networking_powerline_ethernet" />
+  <xs:element name="networking_print_servers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_printer_ports_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="print_server_placement" type="print_server_placement" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="networking_repeaters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_transfer_speed_mbits" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="networking_routers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="data_link_layer" type="data_link_layer" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_lan_ports" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless_network" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="optic_accessories_binocular_accessories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_binocular_accessories" type="type_of_binocular_accessories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="optic_accessories_night_vision_optic_accessories" />
+  <xs:element fixed="" name="optic_accessories_rangefinder_accessories" />
+  <xs:element name="optic_accessories_spotting_scope_accessories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_spotting_scope_accessories" type="type_of_spotting_scope_accessories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="optic_accessories_telescope_accessories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_telescope_accessories" type="type_of_telescope_accessories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="optic_accessories_thermal_optic_accessories" />
+  <xs:element name="optics_binoculars">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="lens_diameter_mm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="magnification_x" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_binocular" type="type_of_binocular" />
+        <xs:element minOccurs="0" maxOccurs="1" name="waterproof" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="optics_microscope" />
+  <xs:element name="optics_rangefinders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_length_m" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="optics_telescopes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="lens_diameter_mm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="magnification_x" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="photographic_processing_developing_and_processing_equipment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_developing_and_processing_equipm" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="photographic_processing_enlarging_equipment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_enlarging_equipment" type="type_of_enlarging_equipment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="photographic_processing_photographic_chemicals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_photo_chemicals" type="type_of_photo_chemicals" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="photographic_processing_safelights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_safelight" type="type_of_safelight" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="portable_audio_compact_stereos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tuner_type" type="tuner_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless_network" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="portable_audio_dictaphones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="external_microphone" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="portable_audio_mp3_players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="bluetooth" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless_network" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="portable_audio_portable_audio_accessories" />
+  <xs:element name="portable_audio_portable_cd_players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="anti-skip_protection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="remote_control" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="portable_audio_portable_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="bluetooth" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="docking" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="headphone_output" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="power_management" type="power_management" />
+        <xs:element minOccurs="0" maxOccurs="1" name="remote_control" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless_network" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="power_ac_adapters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="capacity_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="power_extension_cords" />
+  <xs:element name="power_plugs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="plugsocket_type" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="power_power_strips">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outlets_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="power_sockets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="grounded" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outlets_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="plugsocket_type" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="power_travel_adapters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="world_wide_functional" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="power_ups">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="backup_time_min" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="power_ups_accessories" />
+  <xs:element fixed="" name="print_copy_scan_and_fax_copiers" />
+  <xs:element fixed="" name="print_copy_scan_and_fax_fax_machines" />
+  <xs:element name="print_copy_scan_and_fax_printer_parts_and_accessories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_printer_accessories" type="type_of_printer_accessories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="print_copy_scan_and_fax_scanners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="scanner_type" type="stringNotNull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="printers_3d_printers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_extruders_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="printers_inkjet_printers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_print_resolution_black" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_print_resolution_color" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="page_per_minute_color_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paper_size_supported" type="paper_size_supported" />
+        <xs:element minOccurs="0" maxOccurs="1" name="printer_functions" type="printer_functions" />
+        <xs:element minOccurs="0" maxOccurs="1" name="printer_interfaces" type="printer_interfaces" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="printers_laser_printers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_print_resolution_black" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_print_resolution_color" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="page_per_minute_color_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="paper_size_supported" type="paper_size_supported" />
+        <xs:element minOccurs="0" maxOccurs="1" name="printer_functions" type="printer_functions" />
+        <xs:element minOccurs="0" maxOccurs="1" name="printer_interfaces" type="printer_interfaces" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="printers_photo_printers" />
+  <xs:element fixed="" name="printers_portable_printers" />
+  <xs:element name="printers_wide_format_printers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="paper_size_supported" type="paper_size_supported" />
+        <xs:element minOccurs="0" maxOccurs="1" name="printer_functions" type="printer_functions" />
+        <xs:element minOccurs="0" maxOccurs="1" name="printer_interfaces" type="printer_interfaces" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="projector_accessories_projector_lamps" />
+  <xs:element fixed="" name="projector_accessories_projector_screen_accessories" />
+  <xs:element name="projector_accessories_projector_screens">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="aspect_ratio" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_surface_color" type="screen_surface_color" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="projector_accessories_projector_tripods" />
+  <xs:element fixed="" name="receipt_printers_label_printers" />
+  <xs:element name="satellite_and_cable_tv_accessories_conditional_access_modules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="encryption_system" type="encryption_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="hdtv_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mpeg-4_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_operators" type="supported_operators" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="satellite_and_cable_tv_accessories_satellite_and_antenna_cable_switches">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="reception_type" type="reception_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="signal_attenuation_db" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="satellite_and_cable_tv_accessories_satellite_lnbs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outputs_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="satellite_and_cable_tv_accessories_tv_antenna_amplifier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="gain_db" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outputs_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="reception_type" type="reception_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="satellite_and_cable_tv_accessories_tv_antenna_mounts" />
+  <xs:element name="satellite_and_cable_tv_accessories_tv_signal_meter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="reception_type" type="reception_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="satellite_and_cable_tv_accessories_tv_signal_splitters_and_combiners">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="reception_type" type="reception_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="signal_attenuation_db" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="satellite_and_cable_tv_tv_antennas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="gain_db" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outputs_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="reception_type" type="reception_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="satellite_and_cable_tv_tv_satellite_dishes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="diameter_cm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_lnb_heads_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_operators" type="supported_operators" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="scanner_accessories_scanner_calibration" />
+  <xs:element fixed="" name="scanner_accessories_scanner_pad_assemblies" />
+  <xs:element fixed="" name="speakers_bookshelf_speaker" />
+  <xs:element name="speakers_built-in_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="speakers_center_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="speakers_floor_standing_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="speakers_monitor_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="speakers_outdoor_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="speakers_satellite_speakers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="speakers_speaker_accessories" />
+  <xs:element name="speakers_speaker_packages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="airplay" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="speakers_subwoofers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speaker_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ssd_solid_state_drive_external_ssd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="power_management" type="power_management" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ssd_solid_state_drive_internal_ssd">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hard_drive_form_factor" type="hard_drive_form_factor" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stereo_systems_and_amplifiers_cd_players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_disc_drive" type="type_of_disc_drive" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="stereo_systems_and_amplifiers_equalizers" />
+  <xs:element name="stereo_systems_and_amplifiers_headphone_amplifiers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="built-in_da_converter" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="stereo_systems_and_amplifiers_jukebox" />
+  <xs:element name="stereo_systems_and_amplifiers_radios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="alarm_clock" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="display" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tuner_type" type="tuner_type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stereo_systems_and_amplifiers_stereo_amplifier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hdmi_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="impedance_ohm" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stereo_systems_and_amplifiers_stereo_systems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_effect_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rms_power_w" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="stereo_features" type="stereo_features" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stereo_systems_and_amplifiers_turntables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="including_pick-up" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="turntable_drive_method" type="turntable_drive_method" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_turntable" type="type_of_turntable" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="stereo_systems_and_amplifiers_turntables_accessories" />
+  <xs:element fixed="" name="storage_media_accessories_disc_cases" />
+  <xs:element fixed="" name="storage_media_accessories_floppy_disk_cases" />
+  <xs:element name="storage_media_accessories_memory_card_cases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_cards_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storage_media_accessories_usb_flash_cases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_pockets_no" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storage_media_discs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_mb" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="storage_media_floppy_disk" />
+  <xs:element name="storage_media_memory_cards">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_card_format" type="memory_card_format" />
+        <xs:element minOccurs="0" maxOccurs="1" name="read_speed_mbs" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="write_speed_mbs" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="storage_media_usb_flash_drives">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_capacity_gb" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="read_speed_mbs" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="write_speed_mbs" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tablet_accessories_tablet_cases_and_covers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="material" type="material" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tablet_cases_and_covers_compability" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_cover" type="type_of_cover" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tablet_accessories_tablet_screen_protectors_and_filters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_protection_type" type="screen_protection_type" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tablet_accessories_tablet_stands_and_mounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="rotatable_mount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="telephony_answering_machines" />
+  <xs:element fixed="" name="telephony_caller_ids" />
+  <xs:element fixed="" name="telephony_conference_phones" />
+  <xs:element name="telephony_corded_phones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="phone_functions" type="phone_functions" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="telephony_cordless_phones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="phone_functions" type="phone_functions" />
+        <xs:element minOccurs="0" maxOccurs="1" name="talk_time_h" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="telephony_ip_phones" />
+  <xs:element fixed="" name="telephony_telephone_accessories" />
+  <xs:element name="tv_and_video_projectors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="brightness_lumens" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="max_resolution" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="projector_technology" type="projector_technology" />
+        <xs:element minOccurs="0" maxOccurs="1" name="speakers" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tv_and_video_tv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="hdmi_ports_number_of" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="smart-tv" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_resolution_formats" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="tv_display_technology" type="tv_display_technology" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_digital_tuner" type="type_of_digital_tuner" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tv_receivers_cable_tv_receivers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="encryption_system" type="encryption_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="hdtv_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mpeg-4_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outputs_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_operators" type="supported_operators" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tv_receivers_digital_tv_receiver">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="encryption_system" type="encryption_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="hdtv_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mpeg-4_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outputs_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_operators" type="supported_operators" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tv_receivers_satellite_receivers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="encryption_system" type="encryption_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="hdtv_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mpeg-4_support" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_outputs_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_operators" type="supported_operators" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wall_mounts_and_ceiling_mounts_monitor_mounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_load_kg" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mount_placement" type="mount_placement" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rotatable_mount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="wall_mounts_and_ceiling_mounts_mountaccessories" />
+  <xs:element name="wall_mounts_and_ceiling_mounts_projector_mounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_load_kg" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rotatable_mount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wall_mounts_and_ceiling_mounts_speaker_mounts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="max_load_kg" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="mount_placement" type="mount_placement" />
+        <xs:element minOccurs="0" maxOccurs="1" name="rotatable_mount" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="wall_mounts_and_ceiling_mounts_tv_mounts" />
+  <xs:element name="wearables_fitness_trackers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="fittnes_tracker_functions" type="fittnes_tracker_functions" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="wearables_smart_glasses" />
+  <xs:element name="wearables_smart_watches">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="operating_system" type="operating_system" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="video_and_media_players_blu-ray_players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ethernet_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless_network" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="video_and_media_players_dvd_players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ethernet_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_card_reader" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="supported_resolution_formats" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="type_of_disc_drive" type="type_of_disc_drive" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="video_and_media_players_media_players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ethernet_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_card_reader" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="wireless_network" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="video_and_media_players_portable_dvd_and_blu-ray_players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ethernet_connection" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="memory_card_reader" type="xs:boolean" />
+        <xs:element minOccurs="0" maxOccurs="1" name="number_of_screens_no" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="power_management" type="power_management" />
+        <xs:element minOccurs="0" maxOccurs="1" name="screen_size_inch" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element fixed="" name="video_and_media_players_vcr_player" />
+  <xs:element name="wireless_audio_components_bluetooth_transmitter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="bluetooth_version" type="stringNotNull" />
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="wireless_audio_components_fm_transmitter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="usb_connection" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="category">
+    <xs:choice>
+      <xs:element ref="adapters_3_5_mm_adapters" />
+      <xs:element ref="adapters_6_3_mm_adapters" />
+      <xs:element ref="adapters_antenna_adapters" />
+      <xs:element ref="adapters_bnc_adapters" />
+      <xs:element ref="adapters_displayport_adapters" />
+      <xs:element ref="adapters_dvi_adapters" />
+      <xs:element ref="adapters_firewire_adapters" />
+      <xs:element ref="adapters_hdmi_adapters" />
+      <xs:element ref="adapters_ide_adapters" />
+      <xs:element ref="adapters_midi_adapters" />
+      <xs:element ref="adapters_molex_adapters" />
+      <xs:element ref="adapters_network_adapters" />
+      <xs:element ref="adapters_optical_adapters" />
+      <xs:element ref="adapters_other_adapters" />
+      <xs:element ref="adapters_rca_adapters" />
+      <xs:element ref="adapters_sata_adapters" />
+      <xs:element ref="adapters_scart_adapters" />
+      <xs:element ref="adapters_speaker_adapters" />
+      <xs:element ref="adapters_speakon_adapters" />
+      <xs:element ref="adapters_usb_adapters" />
+      <xs:element ref="adapters_vga_adapters" />
+      <xs:element ref="adapters_xlr_adapters" />
+      <xs:element ref="audio_clock_radio" />
+      <xs:element ref="audio_headphones_and_headsets" />
+      <xs:element ref="batteries_and_chargers_alkaline_batteries" />
+      <xs:element ref="batteries_and_chargers_battery_chargers" />
+      <xs:element ref="batteries_and_chargers_button_cell_batteries" />
+      <xs:element ref="batteries_and_chargers_lithium_batteries" />
+      <xs:element ref="batteries_and_chargers_rechargeable_batteries" />
+      <xs:element ref="batteries_and_chargers_solar_chargers" />
+      <xs:element ref="cable_management_cable_clips" />
+      <xs:element ref="cable_management_cable_ties" />
+      <xs:element ref="cable_management_cable_trays" />
+      <xs:element ref="cable_management_patch_panels" />
+      <xs:element ref="cables_3_5_mm_cables" />
+      <xs:element ref="cables_6_3_mm_cables" />
+      <xs:element ref="cables_antenna_cables" />
+      <xs:element ref="cables_bnc_cables" />
+      <xs:element ref="cables_displayport_cables" />
+      <xs:element ref="cables_dvi_cables" />
+      <xs:element ref="cables_firewire_cables" />
+      <xs:element ref="cables_hdmi_cables" />
+      <xs:element ref="cables_ide_cables" />
+      <xs:element ref="cables_midi_cables" />
+      <xs:element ref="cables_molex_cables" />
+      <xs:element ref="cables_network_cables" />
+      <xs:element ref="cables_optical_cables" />
+      <xs:element ref="cables_other_cables" />
+      <xs:element ref="cables_rca_cables" />
+      <xs:element ref="cables_sata_cables" />
+      <xs:element ref="cables_scart_cables" />
+      <xs:element ref="cables_speaker_cables" />
+      <xs:element ref="cables_speakon_cables" />
+      <xs:element ref="cables_usb_cables" />
+      <xs:element ref="cables_vga_cables" />
+      <xs:element ref="cables_xlr_cables" />
+      <xs:element ref="camera_accessories_camera_bags_and_cases" />
+      <xs:element ref="camera_accessories_camera_batteries" />
+      <xs:element ref="camera_accessories_camera_film" />
+      <xs:element ref="camera_accessories_camera_flash_accessories" />
+      <xs:element ref="camera_accessories_camera_flashes" />
+      <xs:element ref="camera_accessories_camera_handles" />
+      <xs:element ref="camera_accessories_camera_remote_controls" />
+      <xs:element ref="camera_accessories_camera_straps" />
+      <xs:element ref="camera_accessories_flash_brackets" />
+      <xs:element ref="camera_accessories_underwater_camera_housings" />
+      <xs:element ref="camera_accessories_video_camera_lights" />
+      <xs:element ref="camera_and_optic_accessories_dronebags" />
+      <xs:element ref="camera_and_optic_accessories_drones_accessories" />
+      <xs:element ref="camera_and_optic_accessories_gimbal" />
+      <xs:element ref="camera_and_optic_accessories_lens_accessories" />
+      <xs:element ref="camera_and_optic_accessories_lenses" />
+      <xs:element ref="camera_and_optic_accessories_tripod_and_monopod_accessories" />
+      <xs:element ref="camera_and_optic_accessories_tripods_and_monopods" />
+      <xs:element ref="cameras_disposable_cameras" />
+      <xs:element ref="cameras_drones" />
+      <xs:element ref="cameras_game_and_trail_cameras" />
+      <xs:element ref="cameras_instant_cameras" />
+      <xs:element ref="car_audio_systems_car_amplifiers" />
+      <xs:element ref="car_audio_systems_head_units" />
+      <xs:element ref="car_audio_systems_marine_speakers" />
+      <xs:element ref="car_speakers_car_audio_subwoofers" />
+      <xs:element ref="car_speakers_coaxial_speakers" />
+      <xs:element ref="cell_phone_accessories_activity_tracker_accessories" />
+      <xs:element ref="cell_phone_accessories_activity_trackers" />
+      <xs:element ref="cell_phone_accessories_cell_phone_cases_and_covers" />
+      <xs:element ref="cell_phone_accessories_cell_phone_charms" />
+      <xs:element ref="cell_phone_accessories_cell_phone_headsets" />
+      <xs:element ref="cell_phone_accessories_cell_phone_screen_protection" />
+      <xs:element ref="cell_phone_accessories_cell_phone_signal_booster" />
+      <xs:element ref="cell_phone_accessories_game_controllers_for_smartphones" />
+      <xs:element ref="cell_phone_accessories_micro-sd" />
+      <xs:element ref="cell_phone_accessories_mobile_credit_card_reader" />
+      <xs:element ref="cell_phone_accessories_other_cell_phone_accessories" />
+      <xs:element ref="cell_phone_accessories_sim_cards" />
+      <xs:element ref="cell_phone_accessories_smart_watch_accessories" />
+      <xs:element ref="cell_phone_chargers_and_batteries_car_charger_" />
+      <xs:element ref="cell_phone_chargers_and_batteries_cell_phone_batteries" />
+      <xs:element ref="cell_phone_chargers_and_batteries_cell_phone_chargers" />
+      <xs:element ref="cell_phone_chargers_and_batteries_powerbanks" />
+      <xs:element ref="cell_phone_chargers_and_batteries_wireless_cell_phone_charging" />
+      <xs:element ref="cell_phone_mounts_car_mounts_for_cell_phones" />
+      <xs:element ref="cell_phone_mounts_selfiesticks" />
+      <xs:element ref="cell_phones_and_accessories_cell_phones" />
+      <xs:element ref="communication_radios_guide_systems" />
+      <xs:element ref="communication_radios_radio_scanners" />
+      <xs:element ref="communication_radios_two-way-radios" />
+      <xs:element ref="communication_radios_two-way-radios_for_hunting" />
+      <xs:element ref="communications_mobile_broadband" />
+      <xs:element ref="computer_accessories_computer_warranties_and_services" />
+      <xs:element ref="computer_accessories_external_optical_drive" />
+      <xs:element ref="computer_accessories_external_sound_cards" />
+      <xs:element ref="computer_accessories_external_tv_tuner_and_video_editing" />
+      <xs:element ref="computer_accessories_memory_card_readers" />
+      <xs:element ref="computer_accessories_monitor_screen_protectors_and_filters" />
+      <xs:element ref="computer_audio_and_video_computer_microphones" />
+      <xs:element ref="computer_audio_and_video_computer_speakers" />
+      <xs:element ref="computer_audio_and_video_webcams" />
+      <xs:element ref="computer_components_computer_cases" />
+      <xs:element ref="computer_components_controller_card" />
+      <xs:element ref="computer_components_cpu_processors" />
+      <xs:element ref="computer_components_floppy_drives" />
+      <xs:element ref="computer_components_graphics_cards" />
+      <xs:element ref="computer_components_internal_memories" />
+      <xs:element ref="computer_components_internal_modems" />
+      <xs:element ref="computer_components_internal_network_cards" />
+      <xs:element ref="computer_components_internal_optical_drives" />
+      <xs:element ref="computer_components_internal_sound_cards" />
+      <xs:element ref="computer_components_internal_tv_tuner_and_video_editing" />
+      <xs:element ref="computer_components_io_ports" />
+      <xs:element ref="computer_components_motherboards" />
+      <xs:element ref="computer_components_power_supplies_psu" />
+      <xs:element ref="computer_components_replacement_parts" />
+      <xs:element ref="computer_servers_blade_servers" />
+      <xs:element ref="computer_servers_rack_servers" />
+      <xs:element ref="computer_servers_server_accessories" />
+      <xs:element ref="computer_servers_tower_servers" />
+      <xs:element ref="computer_software_antivirus_and_security_software" />
+      <xs:element ref="computer_software_design_and_illustration_software" />
+      <xs:element ref="computer_software_music_software" />
+      <xs:element ref="computer_software_operating_systems" />
+      <xs:element ref="computer_software_other_software" />
+      <xs:element ref="computer_software_word_processing_and_presentation_software" />
+      <xs:element ref="computers_and_peripheral_equipment_all_in_one_computers" />
+      <xs:element ref="computers_and_peripheral_equipment_barebone_computers" />
+      <xs:element ref="computers_and_peripheral_equipment_computer_packages" />
+      <xs:element ref="computers_and_peripheral_equipment_desktop_computers" />
+      <xs:element ref="computers_and_peripheral_equipment_e-book_reader" />
+      <xs:element ref="computers_and_peripheral_equipment_laptops" />
+      <xs:element ref="computers_and_peripheral_equipment_monitor_accessories" />
+      <xs:element ref="computers_and_peripheral_equipment_monitors" />
+      <xs:element ref="computers_and_peripheral_equipment_single-board_computer" />
+      <xs:element ref="computers_and_peripheral_equipment_tablets" />
+      <xs:element ref="connectors_3_5_mm_connectors" />
+      <xs:element ref="connectors_6_3_mm_connectors" />
+      <xs:element ref="connectors_antenna_connectors" />
+      <xs:element ref="connectors_bnc_connectors" />
+      <xs:element ref="connectors_displayport_connectors" />
+      <xs:element ref="connectors_dvi_connectors" />
+      <xs:element ref="connectors_firewire_connectors" />
+      <xs:element ref="connectors_hdmi_connectors" />
+      <xs:element ref="connectors_ide_connectors" />
+      <xs:element ref="connectors_midi_connectors" />
+      <xs:element ref="connectors_molex_connectors" />
+      <xs:element ref="connectors_network_connectors" />
+      <xs:element ref="connectors_optical_connectors" />
+      <xs:element ref="connectors_other_connectors" />
+      <xs:element ref="connectors_rca_connectors" />
+      <xs:element ref="connectors_sata_connectors" />
+      <xs:element ref="connectors_scart_connectors" />
+      <xs:element ref="connectors_speaker_connectors" />
+      <xs:element ref="connectors_speakon_connectors" />
+      <xs:element ref="connectors_usb_connectors" />
+      <xs:element ref="connectors_vga_connectors" />
+      <xs:element ref="connectors_xlr_connectors" />
+      <xs:element ref="data_storage_das_direct_attached_storage" />
+      <xs:element ref="data_storage_nas_network_attached_storage" />
+      <xs:element ref="data_storage_san_storage_area_network" />
+      <xs:element ref="digital_cameras_360_cameras" />
+      <xs:element ref="digital_cameras_action_cameras" />
+      <xs:element ref="digital_cameras_compact_cameras" />
+      <xs:element ref="digital_cameras_system_cameras" />
+      <xs:element ref="digital_cameras_vehicle_cameras" />
+      <xs:element ref="digital_cameras_video_cameras" />
+      <xs:element ref="digital_photo_frame" />
+      <xs:element ref="electronics_accessories_3d-glasses" />
+      <xs:element ref="electronics_accessories_electronics_cleaners" />
+      <xs:element ref="electronics_accessories_other_electronics_accessories" />
+      <xs:element ref="electronics_accessories_remote_controls" />
+      <xs:element ref="electronics_accessories_tools_for_electronics" />
+      <xs:element ref="electronics_accessories_touch_screen_gloves" />
+      <xs:element ref="electronics_accessories_touch_screen_pens" />
+      <xs:element ref="electronics_accessories_vr" />
+      <xs:element ref="fans_and_cooling_computer_case_fans" />
+      <xs:element ref="fans_and_cooling_cpu_cooling_fans" />
+      <xs:element ref="fans_and_cooling_fan_grills_and_filters" />
+      <xs:element ref="fans_and_cooling_graphics_card_fans" />
+      <xs:element ref="fans_and_cooling_hard_drive_cooling" />
+      <xs:element ref="fans_and_cooling_heat_sinks" />
+      <xs:element ref="fans_and_cooling_thermal_compound" />
+      <xs:element ref="fans_and_cooling_water_cooling" />
+      <xs:element ref="gps_accessories_gps_bags_and_cases" />
+      <xs:element ref="gps_accessories_gps_mounts" />
+      <xs:element ref="gps_accessories_gps_software" />
+      <xs:element ref="gps_accessories_other_gps_accessories" />
+      <xs:element ref="hard_drive_accessories_hard_drive_bags_and_cases" />
+      <xs:element ref="hard_drive_accessories_hard_drive_docks" />
+      <xs:element ref="hard_drive_accessories_hard_drive_mounts" />
+      <xs:element ref="hard_drive_accessories_other_hard_drive_accessories" />
+      <xs:element ref="hard_drives_external_hard_drives" />
+      <xs:element ref="hard_drives_internal_hard_drives" />
+      <xs:element ref="home_theatre_home_theatre_receivers" />
+      <xs:element ref="home_theatre_home_theatre_sound_bars" />
+      <xs:element ref="home_theatre_home_theatre_systems" />
+      <xs:element ref="ink_toner_and_drums_drums_and_toner" />
+      <xs:element ref="ink_toner_and_drums_fax_film" />
+      <xs:element ref="ink_toner_and_drums_ink_cartridges" />
+      <xs:element ref="input_device_accessories_keyboard_accessories" />
+      <xs:element ref="input_device_accessories_mouse_accessories" />
+      <xs:element ref="input_device_accessories_mouse_pad_accessories" />
+      <xs:element ref="input_device_accessories_mouse_pads" />
+      <xs:element ref="input_device_accessories_wrist_rests" />
+      <xs:element ref="input_devices_digital_pens" />
+      <xs:element ref="input_devices_gamepad" />
+      <xs:element ref="input_devices_graphics_tablets" />
+      <xs:element ref="input_devices_joystick" />
+      <xs:element ref="input_devices_keyboards" />
+      <xs:element ref="input_devices_mice" />
+      <xs:element ref="input_devices_mouse_and_keyboard_packages" />
+      <xs:element ref="input_devices_numeric_keypads" />
+      <xs:element ref="input_devices_presentation_pointers" />
+      <xs:element ref="input_devices_simulators" />
+      <xs:element ref="input_devices_trackballs" />
+      <xs:element ref="input_devices_trackpads" />
+      <xs:element ref="input_devices_wheels" />
+      <xs:element ref="laptop_accessories_batteries" />
+      <xs:element ref="laptop_accessories_chargers" />
+      <xs:element ref="laptop_accessories_cooling_pads" />
+      <xs:element ref="laptop_accessories_laptop_bags_and_cases" />
+      <xs:element ref="laptop_accessories_laptop_docking_station" />
+      <xs:element ref="laptop_accessories_laptop_locks" />
+      <xs:element ref="laptop_accessories_laptop_screen_protectors_and_filters" />
+      <xs:element ref="laptop_accessories_laptop_skins_and_decals" />
+      <xs:element ref="laptop_accessories_laptop_stands_and_mounts" />
+      <xs:element ref="lighting_and_studio_background_tripods" />
+      <xs:element ref="lighting_and_studio_flash_reflectors" />
+      <xs:element ref="lighting_and_studio_light_meter_accessories" />
+      <xs:element ref="lighting_and_studio_light_meters" />
+      <xs:element ref="lighting_and_studio_light_stands_and_mounting" />
+      <xs:element ref="lighting_and_studio_light_tents" />
+      <xs:element ref="lighting_and_studio_lighting_filters_and_gels" />
+      <xs:element ref="lighting_and_studio_photography_backgrounds" />
+      <xs:element ref="lighting_and_studio_photography_shooting_tables" />
+      <xs:element ref="lighting_and_studio_soft_boxes_and_diffusions" />
+      <xs:element ref="lighting_and_studio_studio_lights_and_flashes" />
+      <xs:element ref="modding_computer_lighting" />
+      <xs:element ref="modding_front_panels" />
+      <xs:element ref="modding_sound_deadening_pads" />
+      <xs:element ref="navigation_gps_receivers" />
+      <xs:element ref="navigation_gps_trackers" />
+      <xs:element ref="networking_access_points" />
+      <xs:element ref="networking_bridges" />
+      <xs:element ref="networking_external_network_cards" />
+      <xs:element ref="networking_firewall" />
+      <xs:element ref="networking_hubs" />
+      <xs:element ref="networking_kvm_switches" />
+      <xs:element ref="networking_modems" />
+      <xs:element ref="networking_network_accessories" />
+      <xs:element ref="networking_network_antennas" />
+      <xs:element ref="networking_network_switches" />
+      <xs:element ref="networking_other_network_products" />
+      <xs:element ref="networking_powerline_ethernet" />
+      <xs:element ref="networking_print_servers" />
+      <xs:element ref="networking_repeaters" />
+      <xs:element ref="networking_routers" />
+      <xs:element ref="optic_accessories_binocular_accessories" />
+      <xs:element ref="optic_accessories_night_vision_optic_accessories" />
+      <xs:element ref="optic_accessories_rangefinder_accessories" />
+      <xs:element ref="optic_accessories_spotting_scope_accessories" />
+      <xs:element ref="optic_accessories_telescope_accessories" />
+      <xs:element ref="optic_accessories_thermal_optic_accessories" />
+      <xs:element ref="optics_binoculars" />
+      <xs:element ref="optics_microscope" />
+      <xs:element ref="optics_rangefinders" />
+      <xs:element ref="optics_telescopes" />
+      <xs:element ref="photographic_processing_developing_and_processing_equipment" />
+      <xs:element ref="photographic_processing_enlarging_equipment" />
+      <xs:element ref="photographic_processing_photographic_chemicals" />
+      <xs:element ref="photographic_processing_safelights" />
+      <xs:element ref="portable_audio_compact_stereos" />
+      <xs:element ref="portable_audio_dictaphones" />
+      <xs:element ref="portable_audio_mp3_players" />
+      <xs:element ref="portable_audio_portable_audio_accessories" />
+      <xs:element ref="portable_audio_portable_cd_players" />
+      <xs:element ref="portable_audio_portable_speakers" />
+      <xs:element ref="power_ac_adapters" />
+      <xs:element ref="power_extension_cords" />
+      <xs:element ref="power_plugs" />
+      <xs:element ref="power_power_strips" />
+      <xs:element ref="power_sockets" />
+      <xs:element ref="power_travel_adapters" />
+      <xs:element ref="power_ups" />
+      <xs:element ref="power_ups_accessories" />
+      <xs:element ref="print_copy_scan_and_fax_copiers" />
+      <xs:element ref="print_copy_scan_and_fax_fax_machines" />
+      <xs:element ref="print_copy_scan_and_fax_printer_parts_and_accessories" />
+      <xs:element ref="print_copy_scan_and_fax_scanners" />
+      <xs:element ref="printers_3d_printers" />
+      <xs:element ref="printers_inkjet_printers" />
+      <xs:element ref="printers_laser_printers" />
+      <xs:element ref="printers_photo_printers" />
+      <xs:element ref="printers_portable_printers" />
+      <xs:element ref="printers_wide_format_printers" />
+      <xs:element ref="projector_accessories_projector_lamps" />
+      <xs:element ref="projector_accessories_projector_screen_accessories" />
+      <xs:element ref="projector_accessories_projector_screens" />
+      <xs:element ref="projector_accessories_projector_tripods" />
+      <xs:element ref="receipt_printers_label_printers" />
+      <xs:element ref="satellite_and_cable_tv_accessories_conditional_access_modules" />
+      <xs:element ref="satellite_and_cable_tv_accessories_satellite_and_antenna_cable_switches" />
+      <xs:element ref="satellite_and_cable_tv_accessories_satellite_lnbs" />
+      <xs:element ref="satellite_and_cable_tv_accessories_tv_antenna_amplifier" />
+      <xs:element ref="satellite_and_cable_tv_accessories_tv_antenna_mounts" />
+      <xs:element ref="satellite_and_cable_tv_accessories_tv_signal_meter" />
+      <xs:element ref="satellite_and_cable_tv_accessories_tv_signal_splitters_and_combiners" />
+      <xs:element ref="satellite_and_cable_tv_tv_antennas" />
+      <xs:element ref="satellite_and_cable_tv_tv_satellite_dishes" />
+      <xs:element ref="scanner_accessories_scanner_calibration" />
+      <xs:element ref="scanner_accessories_scanner_pad_assemblies" />
+      <xs:element ref="speakers_bookshelf_speaker" />
+      <xs:element ref="speakers_built-in_speakers" />
+      <xs:element ref="speakers_center_speakers" />
+      <xs:element ref="speakers_floor_standing_speakers" />
+      <xs:element ref="speakers_monitor_speakers" />
+      <xs:element ref="speakers_outdoor_speakers" />
+      <xs:element ref="speakers_satellite_speakers" />
+      <xs:element ref="speakers_speaker_accessories" />
+      <xs:element ref="speakers_speaker_packages" />
+      <xs:element ref="speakers_subwoofers" />
+      <xs:element ref="ssd_solid_state_drive_external_ssd" />
+      <xs:element ref="ssd_solid_state_drive_internal_ssd" />
+      <xs:element ref="stereo_systems_and_amplifiers_cd_players" />
+      <xs:element ref="stereo_systems_and_amplifiers_equalizers" />
+      <xs:element ref="stereo_systems_and_amplifiers_headphone_amplifiers" />
+      <xs:element ref="stereo_systems_and_amplifiers_jukebox" />
+      <xs:element ref="stereo_systems_and_amplifiers_radios" />
+      <xs:element ref="stereo_systems_and_amplifiers_stereo_amplifier" />
+      <xs:element ref="stereo_systems_and_amplifiers_stereo_systems" />
+      <xs:element ref="stereo_systems_and_amplifiers_turntables" />
+      <xs:element ref="stereo_systems_and_amplifiers_turntables_accessories" />
+      <xs:element ref="storage_media_accessories_disc_cases" />
+      <xs:element ref="storage_media_accessories_floppy_disk_cases" />
+      <xs:element ref="storage_media_accessories_memory_card_cases" />
+      <xs:element ref="storage_media_accessories_usb_flash_cases" />
+      <xs:element ref="storage_media_discs" />
+      <xs:element ref="storage_media_floppy_disk" />
+      <xs:element ref="storage_media_memory_cards" />
+      <xs:element ref="storage_media_usb_flash_drives" />
+      <xs:element ref="tablet_accessories_tablet_cases_and_covers" />
+      <xs:element ref="tablet_accessories_tablet_screen_protectors_and_filters" />
+      <xs:element ref="tablet_accessories_tablet_stands_and_mounts" />
+      <xs:element ref="telephony_answering_machines" />
+      <xs:element ref="telephony_caller_ids" />
+      <xs:element ref="telephony_conference_phones" />
+      <xs:element ref="telephony_corded_phones" />
+      <xs:element ref="telephony_cordless_phones" />
+      <xs:element ref="telephony_ip_phones" />
+      <xs:element ref="telephony_telephone_accessories" />
+      <xs:element ref="tv_and_video_projectors" />
+      <xs:element ref="tv_and_video_tv" />
+      <xs:element ref="tv_receivers_cable_tv_receivers" />
+      <xs:element ref="tv_receivers_digital_tv_receiver" />
+      <xs:element ref="tv_receivers_satellite_receivers" />
+      <xs:element ref="wall_mounts_and_ceiling_mounts_monitor_mounts" />
+      <xs:element ref="wall_mounts_and_ceiling_mounts_mountaccessories" />
+      <xs:element ref="wall_mounts_and_ceiling_mounts_projector_mounts" />
+      <xs:element ref="wall_mounts_and_ceiling_mounts_speaker_mounts" />
+      <xs:element ref="wall_mounts_and_ceiling_mounts_tv_mounts" />
+      <xs:element ref="wearables_fitness_trackers" />
+      <xs:element ref="wearables_smart_glasses" />
+      <xs:element ref="wearables_smart_watches" />
+      <xs:element ref="video_and_media_players_blu-ray_players" />
+      <xs:element ref="video_and_media_players_dvd_players" />
+      <xs:element ref="video_and_media_players_media_players" />
+      <xs:element ref="video_and_media_players_portable_dvd_and_blu-ray_players" />
+      <xs:element ref="video_and_media_players_vcr_player" />
+      <xs:element ref="wireless_audio_components_bluetooth_transmitter" />
+      <xs:element ref="wireless_audio_components_fm_transmitter" />
+    </xs:choice>
+  </xs:complexType>
+</xs:schema>

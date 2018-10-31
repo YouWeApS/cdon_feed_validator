@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+  attributeFormDefault="unqualified"
+  elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:include schemaLocation="types.xsd" />
+
+  <xs:simpleType name="energyClass">
+    <xs:annotation>
+      <xs:documentation>
+        For more information, please visit https://europa.eu/youreurope/business/environment/energy-labels/index_en.htm
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="APlusPlusPlus" />
+      <xs:enumeration value="APlusPlus" />
+      <xs:enumeration value="APlus" />
+      <xs:enumeration value="A" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="D" />
+      <xs:enumeration value="E" />
+      <xs:enumeration value="F" />
+      <xs:enumeration value="G" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="energyClassification">
+    <xs:annotation>
+      <xs:documentation>
+        The URLs accept JPEG or PNG images, and also PDF (in which case it is converted to an image).
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="class" minOccurs="1" maxOccurs="1" type="energyClass" />
+      <xs:element name="label" minOccurs="1" maxOccurs="1" type="url" />
+      <xs:element name="arrow" minOccurs="1" maxOccurs="1" type="url" />
+      <xs:element name="sheet" minOccurs="1" maxOccurs="1" type="url" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
