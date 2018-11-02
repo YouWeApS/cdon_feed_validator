@@ -9,43 +9,61 @@ RSpec.describe CDONFeedValidator::Product do
       <?xml version="1.0" encoding="UTF-8"?>
       <marketplace xmlns="https://schemas.cdon.com/product/4.0/4.1.0/product">
         <product>
-        <identity>
-          <id>100</id>
-        </identity>
-        <title>
-          <default>Twisted Cat</default>
-        </title>
-        <description>
-          <default>Ethernet with a twist!</default>
-        </description>
-        <category>
-          <cables_network_cables>
-            <network_cable_category>network_cable_category_cat6a</network_cable_category>
-          </cables_network_cables>
-        </category>
-        <usp>
-          <value>
-            <default>Six alpha cats</default>
-            <se>Sex alphakatter</se>
-          </value>
-          <value>
-            <default>Lasts long</default>
-            <se>Räcker länge</se>
-          </value>
-        </usp>
-        <energy>
-          <class>APlusPlus</class>
-          <label>https://cdon.com/label.jpg</label>
-          <arrow>https://cdon.com/arrow.png</arrow>
-          <sheet>https://cdon.com/sheet.pdf</sheet>
-        </energy>
-        <dimensions>
-          <length>
-            <value>5</value>
-            <unit>m</unit>
-          </length>
-        </dimensions>
-        <releaseDate>1987-01-01</releaseDate>
+          <identity>
+            <id>100</id>
+          </identity>
+          <title>
+            <default>Twisted Cat</default>
+          </title>
+          <description>
+            <default>Ethernet with a twist!</default>
+          </description>
+          <category>
+            <cables_network_cables>
+              <network_cable_category>network_cable_category_cat6a</network_cable_category>
+            </cables_network_cables>
+          </category>
+          <usp>
+            <value>
+              <default>Six alpha cats</default>
+              <se>Sex alphakatter</se>
+            </value>
+            <value>
+              <default>Lasts long</default>
+              <se>Räcker länge</se>
+            </value>
+          </usp>
+          <energy>
+            <class>APlusPlus</class>
+            <label>https://cdon.com/label.jpg</label>
+            <arrow>https://cdon.com/arrow.png</arrow>
+            <sheet>https://cdon.com/sheet.pdf</sheet>
+          </energy>
+          <dimensions>
+            <length>
+              <value>5</value>
+              <unit>m</unit>
+            </length>
+          </dimensions>
+          <releaseDate>1987-01-01</releaseDate>
+          <variants>
+            <variantByColor>
+              <identity>
+                <id>201</id>
+              </identity>
+              <color>
+                <default>Graphite Gray</default>
+              </color>
+            </variantByColor>
+            <variantByColor>
+              <identity>
+                <id>202</id>
+              </identity>
+              <color>
+                <default>Matte Black</default>
+              </color>
+            </variantByColor>
+          </variants>
         </product>
       </marketplace>
     XML
