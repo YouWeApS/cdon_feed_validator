@@ -1,7 +1,7 @@
 
 $LOAD_PATH << File.expand_path('lib', __dir__)
 
-require 'cdon_feed_validator'
+require_relative './lib/cdon_feed_validator'
 
 Gem::Specification.new do |spec|
   spec.name          = 'cdon_feed_validator'
