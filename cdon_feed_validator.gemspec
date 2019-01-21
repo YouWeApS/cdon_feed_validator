@@ -2,10 +2,11 @@
 $LOAD_PATH << File.expand_path('lib', __dir__)
 
 require 'cdon_feed_validator'
+require 'active_support/all'
 
 Gem::Specification.new do |spec|
   spec.name          = 'cdon_feed_validator'
-  spec.version       = CDONFeedValidator::VERSION
+  spec.version       = '1.0.2'
   spec.authors       = ['Emil Kampp']
   spec.email         = ['emil@kampp.me']
 
