@@ -5,7 +5,7 @@ require 'cdon_feed_validator'
 
 Gem::Specification.new do |spec|
   spec.name          = 'cdon_feed_validator'
-  spec.version       = '1.0.2'
+  spec.version       = '1.1.0'
   spec.authors       = ['Emil Kampp']
   spec.email         = ['emil@kampp.me']
 
