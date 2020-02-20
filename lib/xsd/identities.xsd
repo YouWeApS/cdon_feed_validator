@@ -8,7 +8,8 @@
 
   <xs:simpleType name="id">
     <xs:restriction base="xs:token">
-      <xs:pattern value="[a-zA-Z0-9/_-]{1,40}" />
+      <xs:minLength value="1" />
+      <xs:maxLength value="40" />
     </xs:restriction>
   </xs:simpleType>
 

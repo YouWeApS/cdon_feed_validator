@@ -19,7 +19,6 @@
 
   <xs:simpleType name="url">
     <xs:restriction base="xs:anyURI">
-      <xs:pattern value="(https?|ftp)://(-\.)?([^\s/?\.#-]+\.?)+(/[^\s]*)?" />
     </xs:restriction>
   </xs:simpleType>
 

@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:include schemaLocation="types.xsd" />
-  <xs:simpleType name="UnitQuantity">
-    <xs:restriction base="xs:int" />
-  </xs:simpleType>
   <xs:simpleType name="action_camera_functions">
     <xs:restriction base="xs:token">
       <xs:enumeration value="action_camera_functions_display" />
@@ -11,6 +8,13 @@
       <xs:enumeration value="action_camera_functions_microphone" />
       <xs:enumeration value="action_camera_functions_waterproof" />
       <xs:enumeration value="action_camera_functions_wifi" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="animal_food_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="dry_food" />
+      <xs:enumeration value="fresh_food" />
+      <xs:enumeration value="wet_food" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="aspect_ratio">
@@ -189,6 +193,13 @@
       <xs:enumeration value="chipset_via_vx900" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="cleaning_mop_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="flat_mop" />
+      <xs:enumeration value="sponge_mop" />
+      <xs:enumeration value="twist_mop" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="color_group">
     <xs:restriction base="xs:token">
       <xs:enumeration value="color_group_beige" />
@@ -246,6 +257,9 @@
   </xs:simpleType>
   <xs:simpleType name="compatiblecellphonemodel">
     <xs:restriction base="xs:token">
+      <xs:enumeration value="apple_iphone_11" />
+      <xs:enumeration value="apple_iphone_11_pro" />
+      <xs:enumeration value="apple_iphone_11_pro_max" />
       <xs:enumeration value="apple_iphone_3gs" />
       <xs:enumeration value="apple_iphone_4" />
       <xs:enumeration value="apple_iphone_4s" />
@@ -262,6 +276,9 @@
       <xs:enumeration value="apple_iphone_8_plus" />
       <xs:enumeration value="apple_iphone_se" />
       <xs:enumeration value="apple_iphone_x" />
+      <xs:enumeration value="apple_iphone_xr" />
+      <xs:enumeration value="apple_iphone_xs" />
+      <xs:enumeration value="apple_iphone_xs_max" />
       <xs:enumeration value="doro_8030" />
       <xs:enumeration value="doro_liberto_825" />
       <xs:enumeration value="google_nexus_4" />
@@ -298,6 +315,9 @@
       <xs:enumeration value="huawei_nexus_6p" />
       <xs:enumeration value="huawei_p_smart" />
       <xs:enumeration value="huawei_p10_lite" />
+      <xs:enumeration value="huawei_p20" />
+      <xs:enumeration value="huawei_p30" />
+      <xs:enumeration value="huawei_p30_pro" />
       <xs:enumeration value="huawei_p8_lite" />
       <xs:enumeration value="huawei_p9_plus" />
       <xs:enumeration value="huawei_y5ii" />
@@ -349,12 +369,14 @@
       <xs:enumeration value="samsung_galaxy_j3_2017" />
       <xs:enumeration value="samsung_galaxy_j5_2016" />
       <xs:enumeration value="samsung_galaxy_j5_2017" />
+      <xs:enumeration value="samsung_galaxy_note_10" />
       <xs:enumeration value="samsung_galaxy_note_2" />
       <xs:enumeration value="samsung_galaxy_note_3" />
       <xs:enumeration value="samsung_galaxy_note_4" />
       <xs:enumeration value="samsung_galaxy_note_5" />
       <xs:enumeration value="samsung_galaxy_note_7" />
       <xs:enumeration value="samsung_galaxy_note_8" />
+      <xs:enumeration value="samsung_galaxy_s10" />
       <xs:enumeration value="samsung_galaxy_s2" />
       <xs:enumeration value="samsung_galaxy_s3" />
       <xs:enumeration value="samsung_galaxy_s4" />
@@ -456,10 +478,24 @@
       <xs:enumeration value="xd" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="deodorant_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="roll_on" />
+      <xs:enumeration value="spray" />
+      <xs:enumeration value="stick" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="docking_station_form_factor">
     <xs:restriction base="xs:token">
       <xs:enumeration value="docking_station_form_factor_2_5_inch" />
       <xs:enumeration value="docking_station_form_factor_3_5_inch" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="door_hinge_side">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="left_hinge" />
+      <xs:enumeration value="reversible_hinge" />
+      <xs:enumeration value="right_hinge" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="ear_piece_design">
@@ -476,6 +512,28 @@
       <xs:enumeration value="cryptolite" />
       <xs:enumeration value="irdeto" />
       <xs:enumeration value="viaccess" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="envelope_size">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="c0" />
+      <xs:enumeration value="c1" />
+      <xs:enumeration value="c2" />
+      <xs:enumeration value="c3" />
+      <xs:enumeration value="c4" />
+      <xs:enumeration value="c5" />
+      <xs:enumeration value="c6" />
+      <xs:enumeration value="c7" />
+      <xs:enumeration value="c8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="espresso_machine_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="automatic" />
+      <xs:enumeration value="built_in" />
+      <xs:enumeration value="capsule" />
+      <xs:enumeration value="manual_type" />
+      <xs:enumeration value="semi_automatic" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="external_network_card_type">
@@ -507,10 +565,37 @@
       <xs:enumeration value="usb" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="eyeglass_frame_shape">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="aviator" />
+      <xs:enumeration value="browline" />
+      <xs:enumeration value="geometric" />
+      <xs:enumeration value="oval" />
+      <xs:enumeration value="oversized" />
+      <xs:enumeration value="rectangle" />
+      <xs:enumeration value="rounded" />
+      <xs:enumeration value="square" />
+      <xs:enumeration value="wayfarer" />
+      <xs:enumeration value="wrap" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="fittnes_tracker_functions">
     <xs:restriction base="xs:token">
       <xs:enumeration value="heartratemonitor" />
       <xs:enumeration value="sleeptracker" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="gender">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="boy" />
+      <xs:enumeration value="child" />
+      <xs:enumeration value="child_unisex" />
+      <xs:enumeration value="girl" />
+      <xs:enumeration value="junior" />
+      <xs:enumeration value="man" />
+      <xs:enumeration value="mother" />
+      <xs:enumeration value="unisex" />
+      <xs:enumeration value="woman" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="gps_functions">
@@ -869,6 +954,13 @@
       <xs:enumeration value="graphics_processor_type_via_chromotionhd_2_0" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="handedness">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ambidextrous" />
+      <xs:enumeration value="left_handedness" />
+      <xs:enumeration value="right_handedness" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="hard_drive_compatible_case">
     <xs:restriction base="stringNotNull" />
   </xs:simpleType>
@@ -918,6 +1010,13 @@
       <xs:enumeration value="internal_memory_type_ddr4_sdram" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="ironing_board_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="other" />
+      <xs:enumeration value="standing" />
+      <xs:enumeration value="tabletop" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="keyboard_design">
     <xs:restriction base="xs:token">
       <xs:enumeration value="keyboard_design_ergonomically" />
@@ -953,6 +1052,24 @@
       <xs:enumeration value="retail" />
       <xs:enumeration value="subscription" />
       <xs:enumeration value="upgrade" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="light_bulb_socket_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="e10" />
+      <xs:enumeration value="e14" />
+      <xs:enumeration value="e27" />
+      <xs:enumeration value="e5" />
+      <xs:enumeration value="gu10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="makeup_hue">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="beige" />
+      <xs:enumeration value="dark" />
+      <xs:enumeration value="fair_light" />
+      <xs:enumeration value="medium" />
+      <xs:enumeration value="multi" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="material">
@@ -1160,6 +1277,13 @@
       <xs:enumeration value="pci_express_card" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="mini_kitchen_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ceramic" />
+      <xs:enumeration value="gas" />
+      <xs:enumeration value="induction" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="mobile_broadband_generation">
     <xs:restriction base="xs:token">
       <xs:enumeration value="mobile_broadband_generation_3g" />
@@ -1250,6 +1374,18 @@
       <xs:enumeration value="panel_type_super_pls" />
       <xs:enumeration value="panel_type_tn" />
       <xs:enumeration value="panel_type_va" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PantsLength">
+    <xs:restriction base="stringNotNull" />
+  </xs:simpleType>
+  <xs:simpleType name="paper_size">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="a1" />
+      <xs:enumeration value="a2" />
+      <xs:enumeration value="a3" />
+      <xs:enumeration value="a4" />
+      <xs:enumeration value="a5" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="paper_size_supported">
@@ -1535,12 +1671,32 @@
       <xs:enumeration value="white" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="sewing_machine_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="computerized" />
+      <xs:enumeration value="electronic" />
+      <xs:enumeration value="handheld" />
+      <xs:enumeration value="mechanical" />
+      <xs:enumeration value="overlocker" />
+    </xs:restriction>
+  </xs:simpleType>
   <xs:simpleType name="sim_card_size">
     <xs:restriction base="xs:token">
       <xs:enumeration value="sim_card_size_micro" />
       <xs:enumeration value="sim_card_size_mini" />
       <xs:enumeration value="sim_card_size_nano" />
       <xs:enumeration value="sim_card_size_standard" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="skin_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="acne" />
+      <xs:enumeration value="dry" />
+      <xs:enumeration value="mature" />
+      <xs:enumeration value="mixed" />
+      <xs:enumeration value="normal" />
+      <xs:enumeration value="oily" />
+      <xs:enumeration value="sensitive" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="socket_type">
@@ -1951,6 +2107,9 @@
       <xs:enumeration value="semi-automatic" />
     </xs:restriction>
   </xs:simpleType>
+  <xs:simpleType name="TypeOfRunningShoes">
+    <xs:restriction base="stringNotNull" />
+  </xs:simpleType>
   <xs:simpleType name="usage_of_speaker_cables">
     <xs:restriction base="xs:token">
       <xs:enumeration value="bi-amp" />
@@ -1963,6 +2122,12 @@
     <xs:restriction base="xs:token">
       <xs:enumeration value="channels_2_0" />
       <xs:enumeration value="channels_3_1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="vacuum_cleaner_bag_type">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="bagged" />
+      <xs:enumeration value="bagless" />
     </xs:restriction>
   </xs:simpleType>
   <xs:simpleType name="webcam_functions">
@@ -1981,6 +2146,16 @@
   <xs:simpleType name="video_camera_functions">
     <xs:restriction base="xs:token">
       <xs:enumeration value="still_pictures" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="wrist_watch_band_material">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="gold" />
+      <xs:enumeration value="leather" />
+      <xs:enumeration value="plastic" />
+      <xs:enumeration value="rubber" />
+      <xs:enumeration value="silvery" />
+      <xs:enumeration value="steel" />
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>

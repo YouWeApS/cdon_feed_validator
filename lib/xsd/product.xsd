@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="product"
-    targetNamespace="https://schemas.cdon.com/product/4.0/4.1.0/product"
-    xmlns="https://schemas.cdon.com/product/4.0/4.1.0/product"
+    targetNamespace="https://schemas.cdon.com/product/4.0/4.8.0/product"
+    xmlns="https://schemas.cdon.com/product/4.0/4.8.0/product"
     attributeFormDefault="unqualified"
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -28,14 +28,13 @@
       <xs:element name="dk" minOccurs="0" maxOccurs="1" type="titleString" />
       <xs:element name="no" minOccurs="0" maxOccurs="1" type="titleString" />
       <xs:element name="fi" minOccurs="0" maxOccurs="1" type="titleString" />
-      <xs:element name="b2b_se" minOccurs="0" maxOccurs="1" type="titleString" />
     </xs:sequence>
   </xs:complexType>
 
   <xs:simpleType name="descriptionString">
     <xs:restriction base="xs:token">
       <xs:minLength value="1" />
-      <xs:maxLength value="2000" />
+      <xs:maxLength value="3000" />
     </xs:restriction>
   </xs:simpleType>
 
@@ -46,7 +45,6 @@
       <xs:element name="dk" minOccurs="0" maxOccurs="1" type="descriptionString" />
       <xs:element name="no" minOccurs="0" maxOccurs="1" type="descriptionString" />
       <xs:element name="fi" minOccurs="0" maxOccurs="1" type="descriptionString" />
-      <xs:element name="b2b_se" minOccurs="0" maxOccurs="1" type="descriptionString" />
     </xs:sequence>
   </xs:complexType>
 
@@ -71,13 +69,12 @@
       <xs:element name="dk" minOccurs="0" maxOccurs="1" type="uspString" />
       <xs:element name="no" minOccurs="0" maxOccurs="1" type="uspString" />
       <xs:element name="fi" minOccurs="0" maxOccurs="1" type="uspString" />
-      <xs:element name="b2b_se" minOccurs="0" maxOccurs="1" type="uspString" />
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="usp">
     <xs:sequence>
-      <xs:element name="value" minOccurs="1" maxOccurs="5" type="uspValue" />
+      <xs:element name="value" minOccurs="1" maxOccurs="15" type="uspValue" />
     </xs:sequence>
   </xs:complexType>
 
