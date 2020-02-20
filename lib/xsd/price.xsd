@@ -1,174 +1,192 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="price"
-    targetNamespace="https://schemas.cdon.com/product/4.0/4.1.0/price"
-    xmlns="https://schemas.cdon.com/product/4.0/4.1.0/price"
+    targetNamespace="https://schemas.cdon.com/product/4.0/4.8.0/price"
+    xmlns="https://schemas.cdon.com/product/4.0/4.8.0/price"
     attributeFormDefault="unqualified"
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <xs:include schemaLocation="identities.xsd" />
-  <xs:include schemaLocation="types.xsd" />
+	<xs:include schemaLocation="identities.xsd" />
+	<xs:include schemaLocation="types.xsd" />
 
-  <xs:simpleType name="money">
-    <xs:annotation>
-      <xs:documentation>Amount includes VAT</xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:decimal">
-      <xs:fractionDigits value="2" />
-      <xs:minInclusive value="0" />
-      <xs:maxInclusive value="1000000" />
-    </xs:restriction>
-  </xs:simpleType>
+	<xs:simpleType name="money">
+		<xs:annotation>
+			<xs:documentation>Amount includes VAT</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="2" />
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="1000000" />
+		</xs:restriction>
+	</xs:simpleType>
 
-  <xs:simpleType name="vatPercentage">
-    <xs:annotation>
-      <xs:documentation>This is a percentage value, i.e. 25 for 25%, not 0.25.</xs:documentation>
-    </xs:annotation>
-    <xs:restriction base="xs:decimal">
-      <xs:minInclusive value="0" />
-      <xs:maxInclusive value="100" />
-      <xs:fractionDigits value="2" />
-    </xs:restriction>
-  </xs:simpleType>
+	<xs:simpleType name ="vat">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="2" />
+			<xs:minInclusive value="0" />
+			<xs:maxInclusive value="100" />
+		</xs:restriction>
+	</xs:simpleType>
 
-  <xs:complexType name="marketSE">
+	<xs:complexType name="marketSE">
+		<xs:complexContent>
+			<xs:extension base="market">
+				<xs:sequence>
+					<xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:enumeration value="0" />
+								<xs:enumeration value="19" />
+								<xs:enumeration value="29" />
+								<xs:enumeration value="39" />
+								<xs:enumeration value="49" />
+								<xs:enumeration value="59" />
+								<xs:enumeration value="79" />
+								<xs:enumeration value="99" />
+								<xs:enumeration value="199" />
+								<xs:enumeration value="395" />
+								<xs:enumeration value="495" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="vat" type="vat" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="marketDK">
+		<xs:complexContent>
+			<xs:extension base="market">
+				<xs:sequence>
+					<xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:enumeration value="0" />
+								<xs:enumeration value="19" />
+								<xs:enumeration value="29" />
+								<xs:enumeration value="39" />
+								<xs:enumeration value="49" />
+								<xs:enumeration value="59" />
+								<xs:enumeration value="79" />
+								<xs:enumeration value="99" />
+								<xs:enumeration value="199" />
+								<xs:enumeration value="495" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="vat" type="vat" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="marketNO">
+		<xs:complexContent>
+			<xs:extension base="market">
+				<xs:sequence>
+					<xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:enumeration value="0" />
+								<xs:enumeration value="19" />
+								<xs:enumeration value="39" />
+								<xs:enumeration value="49" />
+								<xs:enumeration value="59" />
+								<xs:enumeration value="79" />
+								<xs:enumeration value="99" />
+								<xs:enumeration value="399" />
+								<xs:enumeration value="799" />
+								<xs:enumeration value="995" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="vat" type="vat" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="marketFI">
+		<xs:complexContent>
+			<xs:extension base="market">
+				<xs:sequence>
+					<xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:decimal">
+								<xs:enumeration value="0" />
+								<xs:enumeration value="1.95" />
+								<xs:enumeration value="2.95" />
+								<xs:enumeration value="3.95" />
+								<xs:enumeration value="4.90" />
+								<xs:enumeration value="4.95" />
+								<xs:enumeration value="5.95" />
+								<xs:enumeration value="7.95" />
+								<xs:enumeration value="9.95" />
+								<xs:enumeration value="59" />
+								<xs:enumeration value="79" />
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="vat" type="vat" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="marketRakutenFr">
+		<xs:complexContent>
+			<xs:extension base="market">
+				<xs:sequence>
+					<xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
+					</xs:element>
+					<xs:element name="vat" type="vat" minOccurs="1" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+  <xs:complexType name="marketB2BSE">
     <xs:complexContent>
       <xs:extension base="market">
         <xs:sequence>
-          <xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
-            <xs:simpleType>
-              <xs:restriction base="xs:decimal">
-                <xs:enumeration value="0" />
-                <xs:enumeration value="19" />
-                <xs:enumeration value="29" />
-                <xs:enumeration value="39" />
-                <xs:enumeration value="49" />
-                <xs:enumeration value="59" />
-                <xs:enumeration value="79" />
-                <xs:enumeration value="99" />
-                <xs:enumeration value="199" />
-                <xs:enumeration value="395" />
-                <xs:enumeration value="495" />
-              </xs:restriction>
-            </xs:simpleType>
+          <xs:element name="vat" type="vat" minOccurs="1" maxOccurs="1">
           </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
 
-  <xs:complexType name="marketDK">
-    <xs:complexContent>
-      <xs:extension base="market">
-        <xs:sequence>
-          <xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
-            <xs:simpleType>
-              <xs:restriction base="xs:decimal">
-                <xs:enumeration value="0" />
-                <xs:enumeration value="19" />
-                <xs:enumeration value="29" />
-                <xs:enumeration value="39" />
-                <xs:enumeration value="49" />
-                <xs:enumeration value="59" />
-                <xs:enumeration value="79" />
-                <xs:enumeration value="99" />
-                <xs:enumeration value="199" />
-                <xs:enumeration value="495" />
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
+	<xs:complexType name="market" abstract="true">
+		<xs:annotation>
+			<xs:documentation>
+				Please see the documentation regarding valid values for the "shippingCost"- and "vat"-elements.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="salePrice" type="money" minOccurs="1" maxOccurs="1" />
+			<xs:element name="originalPrice" type="money" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
 
-  <xs:complexType name="marketNO">
-    <xs:complexContent>
-      <xs:extension base="market">
-        <xs:sequence>
-          <xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
-            <xs:simpleType>
-              <xs:restriction base="xs:decimal">
-                <xs:enumeration value="0" />
-                <xs:enumeration value="19" />
-                <xs:enumeration value="39" />
-                <xs:enumeration value="49" />
-                <xs:enumeration value="59" />
-                <xs:enumeration value="79" />
-                <xs:enumeration value="99" />
-                <xs:enumeration value="399" />
-                <xs:enumeration value="799" />
-                <xs:enumeration value="995" />
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
+	<xs:complexType name="product">
+		<xs:sequence>
+			<xs:element name="id" type="id" minOccurs="1" maxOccurs="1" />
+			<xs:element name="se" type="marketSE" minOccurs="0" maxOccurs="1" />
+			<xs:element name="dk" type="marketDK" minOccurs="0" maxOccurs="1" />
+			<xs:element name="no" type="marketNO" minOccurs="0" maxOccurs="1" />
+			<xs:element name="fi" type="marketFI" minOccurs="0" maxOccurs="1" />
+			<xs:element name="rakuten_fr" type="marketRakutenFr" minOccurs="0" maxOccurs="1" />
+      <xs:element name="b2b_se" type="marketB2BSE" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
 
-  <xs:complexType name="marketFI">
-    <xs:complexContent>
-      <xs:extension base="market">
-        <xs:sequence>
-          <xs:element name="shippingCost" minOccurs="1" maxOccurs="1">
-            <xs:simpleType>
-              <xs:restriction base="xs:decimal">
-                <xs:enumeration value="0" />
-                <xs:enumeration value="1.95" />
-                <xs:enumeration value="2.95" />
-                <xs:enumeration value="3.95" />
-                <xs:enumeration value="4.90" />
-                <xs:enumeration value="4.95" />
-                <xs:enumeration value="5.95" />
-                <xs:enumeration value="7.95" />
-                <xs:enumeration value="9.95" />
-                <xs:enumeration value="59" />
-                <xs:enumeration value="79" />
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-
-  <xs:complexType name="marketB2B">
-    <xs:complexContent>
-      <xs:extension base="market" />
-    </xs:complexContent>
-  </xs:complexType>
-
-  <xs:complexType name="market" abstract="true">
-    <xs:annotation>
-      <xs:documentation>
-        Please see the documentation regarding valid values for the "shippingCost"- and "vatPercentage"-elements.
-      </xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="salePrice" type="money" minOccurs="1" maxOccurs="1" />
-      <xs:element name="originalPrice" type="money" minOccurs="1" maxOccurs="1" />
-      <xs:element name="vatPercentage" type="vatPercentage" minOccurs="1" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="product">
-    <xs:sequence>
-      <xs:element name="id" type="id" minOccurs="1" maxOccurs="1" />
-      <xs:element name="se" type="marketSE" minOccurs="0" maxOccurs="1" />
-      <xs:element name="dk" type="marketDK" minOccurs="0" maxOccurs="1" />
-      <xs:element name="no" type="marketNO" minOccurs="0" maxOccurs="1" />
-      <xs:element name="fi" type="marketFI" minOccurs="0" maxOccurs="1" />
-      <xs:element name="b2b_se" type="marketB2B" minOccurs="0" maxOccurs="1" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:element name="marketplace">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="product" type="product" minOccurs="1" maxOccurs="unbounded" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+	<xs:element name="marketplace">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="product" type="product" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 
 </xs:schema>

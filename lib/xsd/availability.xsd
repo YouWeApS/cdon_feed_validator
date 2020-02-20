@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="availability"
-    targetNamespace="https://schemas.cdon.com/product/4.0/4.1.0/availability"
-    xmlns="https://schemas.cdon.com/product/4.0/4.1.0/availability"
+    targetNamespace="https://schemas.cdon.com/product/4.0/4.8.0/availability"
+    xmlns="https://schemas.cdon.com/product/4.0/4.8.0/availability"
     attributeFormDefault="unqualified"
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -23,10 +23,65 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <xs:complexType name="market">
+  <xs:complexType name="marketSE">
+    <xs:complexContent>
+      <xs:extension base="market">
+        <xs:sequence>
+          <xs:element name="deliveryTime" type="deliveryTime" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="marketDK">
+    <xs:complexContent>
+      <xs:extension base="market">
+        <xs:sequence>
+          <xs:element name="deliveryTime" type="deliveryTime" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="marketNO">
+    <xs:complexContent>
+      <xs:extension base="market">
+        <xs:sequence>
+          <xs:element name="deliveryTime" type="deliveryTime" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="marketFI">
+    <xs:complexContent>
+      <xs:extension base="market">
+        <xs:sequence>
+          <xs:element name="deliveryTime" type="deliveryTime" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  
+  <xs:complexType name="marketB2BSE">
+    <xs:complexContent>
+      <xs:extension base="market"/>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="marketRakutenFR">
+	  <xs:complexContent>
+		  <xs:extension base="market">
+			  <xs:sequence>
+				  <xs:element name="deliveryTime" type="deliveryTime" minOccurs="1" maxOccurs="1"/>
+			  </xs:sequence>
+		  </xs:extension>
+	  </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="market" abstract="true">
     <xs:sequence>
       <xs:element name="status" type="status" minOccurs="1" maxOccurs="1" />
-      <xs:element name="deliveryTime" type="deliveryTime" minOccurs="1" maxOccurs="1" />
     </xs:sequence>
   </xs:complexType>
 
@@ -36,12 +91,14 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="id" type="id" />
+      <xs:element name="status" type="status" minOccurs="0" maxOccurs="1" />
       <xs:element name="stock" minOccurs="1" maxOccurs="1" type="xs:nonNegativeInteger" />
-      <xs:element name="se" type="market" minOccurs="0" maxOccurs="1" />
-      <xs:element name="dk" type="market" minOccurs="0" maxOccurs="1" />
-      <xs:element name="no" type="market" minOccurs="0" maxOccurs="1" />
-      <xs:element name="fi" type="market" minOccurs="0" maxOccurs="1" />
-      <xs:element name="b2b_se" type="market" minOccurs="0" maxOccurs="1" />
+      <xs:element name="se" type="marketSE" minOccurs="0" maxOccurs="1" />
+      <xs:element name="dk" type="marketDK" minOccurs="0" maxOccurs="1" />
+      <xs:element name="no" type="marketNO" minOccurs="0" maxOccurs="1" />
+      <xs:element name="fi" type="marketFI" minOccurs="0" maxOccurs="1" />
+      <xs:element name="b2b_se" type="marketB2BSE" minOccurs="0" maxOccurs="1" />
+      <xs:element name="rakuten_fr" type="marketRakutenFR" minOccurs="0" maxOccurs="1" />
     </xs:sequence>
   </xs:complexType>
 
